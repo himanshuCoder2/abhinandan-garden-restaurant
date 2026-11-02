@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#180b06", "on-primary": "#ffffff", "primary-container": "#302019", "surface-container-lowest": "#ffffff", "outline": "#817470", "on-secondary": "#ffffff", "on-error": "#ffffff", "secondary": "#755a2a", "outline-variant": "#d2c3be", "surface-dim": "#dedad0", "secondary-container": "#fcd89c", "on-tertiary-fixed-variant": "#733517", "primary-fixed": "#faddd1", "inverse-surface": "#32302a", "on-secondary-fixed": "#271900", "on-tertiary-fixed": "#360f00", "on-secondary-container": "#775d2d", "on-surface-variant": "#4f4541", "inverse-on-surface": "#f5f0e6", "on-background": "#1d1c16", "on-secondary-fixed-variant": "#5b4315", "inverse-primary": "#dcc1b6", "error": "#ba1a1a", "surface-container-high": "#ede8de", "on-primary-fixed": "#271811", "surface-container-highest": "#e7e2d8", "primary-fixed-dim": "#dcc1b6", "surface-container": "#f2ede3", "on-primary-container": "#9e867c", "on-primary-fixed-variant": "#56423a", "tertiary": "#200600", "secondary-fixed-dim": "#e5c188", "on-tertiary-container": "#c57753", "surface-container-low": "#f8f3e9", "tertiary-fixed-dim": "#ffb596", "surface": "#fef9ef", "on-tertiary": "#ffffff", "on-surface": "#1d1c16", "tertiary-fixed": "#ffdbcd", "error-container": "#ffdad6", "on-error-container": "#93000a", "background": "#fef9ef", "tertiary-container": "#431500", "surface-bright": "#fef9ef", "secondary-fixed": "#ffdea9", "surface-variant": "#e7e2d8", "surface-tint": "#6f5a51" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "margin": "3rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><img alt="Abhinandan Garden Restaurant Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bEY5rFwf006mDLCUB_agzY2F8ujTWef6whnsNPnhOrIEXGURgLyki7uLN6jQNNskD93YtTTanyegUk3Kqu9ziA_PxOon64SvPT6psqcLEIj71e2SHwwsYaxLgoTA6H5syWsRJ0qsfEFNJV9_8Gx50OZRs5a8msBXaCV-l58YSL-Slt5HXySDVDEkrACE_nSkVDLd3t6g5MQpBQBIOzfvb9Z0BMydQjOVwwW-Ry8"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1"><span class="font-title-lg text-title-lg text-primary tracking-tight truncate">Abhinandan</span><span class="hidden sm:inline font-body-sm text-body-sm text-secondary italic">Garden</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest truncate">Celebrations And Events</span></div></div><div class="flex items-center gap-1 sm:gap-space-xs flex-shrink-0"><a aria-label="Call Restaurant" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-secondary-container transition-colors" href="tel:+919522266688"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Menu Drawer" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[22px]">menu</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-10">
+<!-- Hero Section -->
+<section class="relative w-full px-gutter-mobile pt-space-md pb-space-lg overflow-hidden">
+<div class="relative z-10 flex flex-col gap-space-xs max-w-lg mx-auto">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container w-max">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Events &amp; Banquets</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight mt-1">
+        Celebrate Life’s Special Moments in Our Lush Garden Setting
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Barapathar, Seoni’s favorite venue for unforgettable open-air and banquet celebrations.
+      </p>
+<!-- Key Value Quick Chips -->
+<div class="flex flex-wrap gap-2 pt-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">groups</span>
+<span class="font-label-sm text-label-sm">Up to 300+ Guests</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">deck</span>
+<span class="font-label-sm text-label-sm">Open Lawn &amp; Gazebo</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-surface-container text-on-surface-variant">
+<span class="material-symbols-outlined text-[15px] text-secondary">soup_kitchen</span>
+<span class="font-label-sm text-label-sm">Custom Pure Veg Banquets</span>
+</div>
+</div>
+</div>
+<!-- Atmospheric Featured Hero Banner Card -->
+<div class="mt-space-md relative rounded-xl overflow-hidden shadow-md max-w-lg mx-auto">
+<div class="bg-cover bg-center w-full h-56 flex flex-col justify-end p-4" data-alt="Enchanting night view of an Indian luxury open-air banquet garden with glowing fairy lights wrapped around tall palms, warm string lighting across a groomed lawn, elegant white-draped round dining tables with brass centerpiece lanterns, and warm ambient candlelight under a starlit twilight sky in Seoni Madhya Pradesh." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCBT94ESJXrfFVDrCghauJ5NJRMtbxJFNqfRxsJzjRrt6ct-1sj4Dgv4Ci5gXGaPtRLWEM3s-9ADzl1-RDM9WwpCzPdG0-nvpI2M4VsavZUhVSkdT1FAvajZelTMmGaWFORRHF_Hq1meP5lda1jfGDniGXSzOtmQck1KgjnsAjtGu3_6zCJLX810xudQkt0FsvFhH-YGvXegVOrh97z2Sgo4uKS9vKeMIznAdx2VEM')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+<div class="relative z-10 flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-semibold">Barapathar Landmark</span>
+<p class="font-title-lg text-title-lg text-on-primary">Open-Sky Garden Elegance</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-[28px]">stars</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Occasion Packages Section -->
+<section class="px-gutter-mobile space-y-space-md max-w-lg mx-auto w-full">
+<div class="flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Curated Packages</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Signature Occasions</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">4 Formats</span>
+</div>
+<!-- Package Card 1: Birthday -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md flex flex-col transition-transform active:scale-[0.99]">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Joyful birthday celebration in an open garden setting with handcrafted pastel organic balloon arch, golden floral frame, decorative wooden tiered cake cutting stage, and children enjoying finger foods in warm twilight lighting with delicate fairy string bulbs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6YFb0cAiIBmHkcMKLriU6_vA_SLY8JIm1kPpX18PHmbqK-I2RLmhsINP0R7npnsr5rmlPUoUMp8ftn5g3KX9G1VAb8xRYRtduY8LRcVWzAyR8GSsRIaZgvl1FeFeggAUAamOW7HZ3cRmYLtVOR6zlcYkFd2HPSprUcZ2licaTA-bhHKc-gtkc1IEKVtlgu5X9gDWuns6gzdQAkqDqKOsyP8JWfzyYiJx_ywSmH5o"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">cake</span>
+<span>Birthdays &amp; Milestones</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<h3 class="font-title-lg text-title-lg text-primary">Birthday Celebrations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Complete custom floral and balloon decor, dedicated cake-cutting podium, dynamic spotlighting, plus customizable kid-friendly and youth gourmet snack menus.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Theme Balloons</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Kid's Platter</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Cake Stage</span>
+</div>
+<button class="mt-2 w-full py-2.5 rounded-lg bg-surface-container hover:bg-secondary-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" onclick="selectOccasion('Birthday Celebration')">
+<span>Inquire for Birthdays</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Package Card 2: Romantic & Anniversary -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md flex flex-col transition-transform active:scale-[0.99]">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Romantic private dining table setup in an intimate open garden wooden gazebo draped with sheer white fabrics and glowing golden fairy string lights, glass hurricane candles, red rose petal runner, and fine porcelain dinnerware under an evening sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0fn_TS40x7tEuAiklI3mKsn_nwIGHDNZVb4kQKensD1L5m04L2usinisqMPBFjz398QYr_bubQfKLsiSlodSKsHLRqN0OiRSS7p7DINnKqEWRtKGwQGTWw7BmFLimVjUGVUs7lzNeUlTJsyCjzLpW3PCiQC8ofsIKG0ZFvykwIOEoBgb9mxLaVQxcqWYFP-J7XM5TTgTDvEfd4twBNIiGr9pUqlEwnUw6zXnq01o"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">favorite</span>
+<span>Anniversary &amp; Couples</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<h3 class="font-title-lg text-title-lg text-primary">Anniversary &amp; Romantic Dining</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Intimate candlelight table arrangements sheltered beneath twinkling fairy lights in our premier garden gazebo, complemented by personalized course-by-course service.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Private Gazebo</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Candlelight</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Butler Service</span>
+</div>
+<button class="mt-2 w-full py-2.5 rounded-lg bg-surface-container hover:bg-secondary-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" onclick="selectOccasion('Anniversary Dining')">
+<span>Inquire for Couples</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Package Card 3: Kitty Party & Family Gatherings -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md flex flex-col transition-transform active:scale-[0.99]">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="A lively family afternoon gathering and ladies kitty party seated at cozy cushioned cane lounge chairs on a manicured green lawn, surrounded by colorful chaat platters, mocktails in mason jars, steaming clay teacups, and lush potted bougainvillea flowers." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bOfc7u5OBB6pe6RqGGt3j-NMw3vT8FByzGRmfCUj88lIwjtBhgK1f0YJftUhVl2nZAESaiBnIz4kSmfxd59mCSFtKD8OwPDERvRubXCeVTTIGbBrCaza3rILmjrDhkpWYaaETbPjXxoNeeNLOyGbsbmNemNhRaSY7aM3WKBZadPryxmJp3urevhI8xaQJfZ8_syLCawbTgCyAKoQykFr9DltxQPFJBXePAciVIk"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">local_cafe</span>
+<span>Socials &amp; Kitty Parties</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<h3 class="font-title-lg text-title-lg text-primary">Family Gatherings &amp; Kitty Parties</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Afternoon tea setups, gourmet live snack counters, artisanal chaat platters, and secluded leafy nooks designed for endless conversation and privacy.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">High Tea &amp; Chaat</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Secluded Seating</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Platter Combos</span>
+</div>
+<button class="mt-2 w-full py-2.5 rounded-lg bg-surface-container hover:bg-secondary-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" onclick="selectOccasion('Kitty Party / Family Gathering')">
+<span>Inquire for Social Groups</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Package Card 4: Engagements & Receptions -->
+<div class="rounded-xl overflow-hidden bg-surface-container-lowest shadow-md flex flex-col transition-transform active:scale-[0.99]">
+<div class="relative h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Grand Indian wedding engagement stage on a broad expansive night lawn with intricate marigold and jasmine floral walls, warm royal chandeliers suspended from trussing, luxury round banquet tables with gold Chiavari chairs, and elegant copper buffet food stations." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuWpt4UxMYek0cKogFFolYp0kfc-XFbnZTLoudr4N8DQw-R1H8W-VC_0o6OR0_7qb4lC6rRLtUEApBZ65xyI2FPxqUpcUKPVfkAfEGCn-Qe9SqFt5MK78j-nrLMzCE74txSIrWOh-v6luTbIneWCD_TAJKb3BBsv9ucZrwbJBiPxen4mhm9sMcoaMVoh90wf2_VeiCyltbYLjakbylIH1ojLZCTmSc9nOWUn22bb0"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-primary/80 backdrop-blur-md text-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">diamond</span>
+<span>Weddings &amp; Receptions</span>
+</div>
+<div class="absolute bottom-3 right-3 px-2 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm">
+          300+ Capacity
+        </div>
+</div>
+<div class="p-space-md flex flex-col gap-2">
+<h3 class="font-title-lg text-title-lg text-primary">Grand Engagements &amp; Receptions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Expansive sprawling lawn space hosting up to 300+ attendees. Includes majestic elevated stage framing, royal bridal entry pathways, and bespoke multi-course buffet banqueting.
+        </p>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Grand Stage</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Deluxe Buffets</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Valet &amp; Hosts</span>
+</div>
+<button class="mt-2 w-full py-2.5 rounded-lg bg-surface-container hover:bg-secondary-container text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 transition-colors" onclick="selectOccasion('Grand Engagement / Reception')">
+<span>Inquire for Large Banquets</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Lawn Facilities & Highlights Bento -->
+<section class="mt-space-xl px-gutter-mobile max-w-lg mx-auto w-full">
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Hospitality Infrastructure</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Lawn Facilities &amp; Amenities</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Every detail engineered to ensure a hitch-free, relaxed celebration for your guests.</p>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Amenity 1 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">nature_people</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">Lush Green Lawn</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Manicured natural grass lawns with botanical perimeter.</p>
+</div>
+<!-- Amenity 2 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">light_mode</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">Ambient Lighting</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Warm golden micro-LEDs, garden lanterns &amp; uplighting.</p>
+</div>
+<!-- Amenity 3 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">speaker</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">Sound &amp; DJ Setup</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Acoustic PA setups and dance floors available on request.</p>
+</div>
+<!-- Amenity 4 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">100% Power Backup</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Automatic silent generator systems for unbroken festivities.</p>
+</div>
+<!-- Amenity 5 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">room_service</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">Dedicated Staff</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Uniformed captains, trained servers and event hosts.</p>
+</div>
+<!-- Amenity 6 -->
+<div class="p-3.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-2">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">local_parking</span>
+</div>
+<span class="font-title-md text-title-md text-primary leading-tight">Ample Safe Parking</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">Spacious dedicated lot for four-wheelers and two-wheelers.</p>
+</div>
+</div>
+</section>
+<!-- Real Event Photo Gallery Carousel Strip -->
+<section class="mt-space-xl max-w-lg mx-auto w-full">
+<div class="px-gutter-mobile mb-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold tracking-wider">Memories Captured</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Celebration Moments</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Swipe gallery →</span>
+</div>
+<!-- Scrollable Photo Strip -->
+<div class="flex gap-3 overflow-x-auto px-gutter-mobile no-scrollbar py-2">
+<!-- Gallery Card 1 -->
+<div class="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Close up photograph of beautifully decorated round banquet table in evening light with brass centerpieces, fresh jasmine and marigold strings, pristine linen napkins, and water glasses reflecting twinkling golden fairy lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbbDoeQvz4--L-gD745PeNBH-gXMJFxRz56UUnBlx8HDxOO9d3sYNd0elxxHKIWDeN15M9N0kHPzqlCMh_-_wj3alX3sjDSJKoS6ujghzGs3NO-dnGqew0C9ccE3pC5TGC3HD-ArgD2rOTIpI_Ofutu9IoNvaacg1XYf1OFrytq6NvmLM_yt1y8M9toHzK-jqIQdaFGgyOBDyUXvhMl8_IOnL921k_XdcdRQoqFxk"/>
+</div>
+<div class="p-3">
+<span class="font-title-md text-title-md text-primary block">Decorated Banquets</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Custom table centerpieces</span>
+</div>
+</div>
+<!-- Gallery Card 2 -->
+<div class="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Wide scenic photograph of illuminated outdoor restaurant garden at dusk with illuminated floral arches, open stone pathways, families smiling and conversing across lawn lounges, and illuminated trees creating warm natural silhouettes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0jtUuk6lh1kcoTVjzSPtdAWrYYoxf3sDWgR3bGNzLbMcR8GiUVfvKjLCV4Hv9MMXvfmih6s1LyyL-LZn2wKGzr1plsReqfSsojrpcCHxSTVzBHVswyh6zVxqbCd2rIjSRQw16XU0dFWhO-MeOS3Fe4uaHxkmOXcENei25WdCzBlahSFb9puD2beAXrYzr_-lNDOaur2-JPs8M_6z2Lv6rHsDTMiAzF-9fQvcwnkE"/>
+</div>
+<div class="p-3">
+<span class="font-title-md text-title-md text-primary block">Night Lawn Ambiance</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Magical fairy-lit trees &amp; sky</span>
+</div>
+</div>
+<!-- Gallery Card 3 -->
+<div class="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Candid celebration photograph of an Indian multi-generational family cheerfully clapping around a festive tiered cake on an illuminated garden stage with sparklers and laughter in Barapathar Seoni." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG4i5qaTAwsfr7A0RhCs3S-FPVU_xCY-9wr4pekelYNm86ITUQFkKOPJ0wMTEEUGY8W3sKEcSpMgVgk_XImq69S-39xD4ECdrUovzclKwfcJiMP7z75P1OWLt_C-j0h7OMnQtJ_BLtYjwZgAgYqAFlH7VTSynF2-2BvJeadc5XMqpQ3pz11T0gPtd7FpYtX8y6mybrE0NqpZIkYQBWSmsbUCwNOZM2Zefgs2XFDog"/>
+</div>
+<div class="p-3">
+<span class="font-title-md text-title-md text-primary block">Joyful Gatherings</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Cherished family milestones</span>
+</div>
+</div>
+<!-- Gallery Card 4 -->
+<div class="flex-shrink-0 w-64 rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<div class="h-44 w-full">
+<img class="w-full h-full object-cover" data-alt="Gourmet live food counter in outdoor garden banquet with chefs preparing fresh paneer tikkas on charcoal sigri skewers, garnished with mint chutney and lemon wedges, emitting appetizing warm smoke." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKy85QqgHEVUgInPFuhtohXaPT5rTbvRw6vja8a85cR2RF_IJjyY3Z9eNEMLH_azy7VuHZMNtv3npGzQLhCWdK01G2M4chcyOpW013KAwj35SwWUR1kcI-87G8rJQUFHVCBUsKMFypnsmp313tOUPf4_3dLLxcRsqLhOg210OHdljfHXeuVNHqHOcQtYIpt-_CQs0d3-bWdy1NTigx6DIYGFzM8czDUYqm8BxoCEA"/>
+</div>
+<div class="p-3">
+<span class="font-title-md text-title-md text-primary block">Live Charcoal Tikkas</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Freshly tossed vegetarian feast</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Event Enquiry & Booking Form Card -->
+<section class="mt-space-xl px-gutter-mobile max-w-lg mx-auto w-full" id="inquiry-form-section">
+<div class="rounded-xl p-space-md bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[20px]">edit_calendar</span>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Start Planning</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary">Plan Your Event With Us</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Share your dates and guest numbers. Our banquet director will craft a tailored menu and arrangement itinerary within 2 hours.
+        </p>
+</div>
+<form class="space-y-3.5" id="event-inquiry-form" onsubmit="handleInquirySubmit(event)">
+<!-- Occasion Selector -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold flex items-center justify-between">
+<span>Occasion Type</span>
+<span class="text-secondary font-normal text-[11px]">Required</span>
+</label>
+<div class="relative">
+<select class="w-full px-3 py-2.5 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none" id="occasion-select" required="">
+<option disabled="" selected="" value="">Select an occasion</option>
+<option value="Birthday Celebration">Birthday Celebration</option>
+<option value="Anniversary Dining">Anniversary &amp; Romantic Dining</option>
+<option value="Kitty Party / Family Gathering">Family Gathering &amp; Kitty Party</option>
+<option value="Grand Engagement / Reception">Grand Engagement &amp; Reception</option>
+<option value="Corporate / Custom Get-Together">Corporate / Custom Get-Together</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] absolute right-3 top-3 pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Date & Guest Count Duo -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold">Event Date</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none" id="event-date" required="" type="date"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold">Estimated Guests</label>
+<div class="relative">
+<select class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm appearance-none focus:outline-none" id="guest-count" required="">
+<option value="10-30">10 – 30 Guests</option>
+<option value="30-70">30 – 70 Guests</option>
+<option value="70-150">70 – 150 Guests</option>
+<option value="150-300+">150 – 300+ Guests</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] absolute right-2.5 top-2.5 pointer-events-none">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Guest Name & Phone -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold">Your Full Name</label>
+<input class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none" placeholder="e.g. Ramesh Agrawal" required="" type="text"/>
+</div>
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold">Mobile Phone (WhatsApp)</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-body-sm text-body-sm text-on-surface-variant">+91</span>
+<input class="w-full pl-12 pr-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none" pattern="[0-9]{10}" placeholder="95222 66688" required="" type="tel"/>
+</div>
+</div>
+<!-- Special Requirements / Notes -->
+<div class="space-y-1">
+<label class="font-label-md text-label-md text-primary font-semibold">Special Wishes (Decor, Music, Menu)</label>
+<textarea class="w-full px-3 py-2 rounded-lg bg-surface text-on-surface font-body-sm text-body-sm focus:outline-none resize-none" placeholder="Tell us if you need balloon themes, cake table, Jain cuisine, or DJ sound..." rows="2"></textarea>
+</div>
+<!-- Submit CTA -->
+<div class="pt-2 flex flex-col gap-2">
+<button class="w-full py-3 rounded-lg bg-secondary-container text-on-secondary-container hover:bg-secondary hover:text-on-secondary font-title-md text-title-md flex items-center justify-center gap-2 shadow-sm transition-colors active:scale-98" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+<span>Enquire Now</span>
+</button>
+<div class="flex items-center justify-center gap-2 text-center text-on-surface-variant font-body-sm text-body-sm">
+<span>Or chat right away:</span>
+<a class="text-secondary font-semibold hover:underline flex items-center gap-0.5" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20am%20inquiring%20about%20event%20booking">
+<span>+91 95222 66688</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</a>
+</div>
+</div>
+</form>
+<!-- Confirmation Toast State (Hidden Initially) -->
+<div class="hidden p-4 rounded-lg bg-surface-container flex flex-col items-center text-center gap-2" id="form-success-card">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary">Inquiry Sent Successfully!</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Thank you! Our Barapathar team will reach out via call or WhatsApp promptly to coordinate details.
+        </p>
+</div>
+</div>
+</section>
+<!-- Guest Testimonials / Trust Note -->
+<section class="mt-space-lg px-gutter-mobile max-w-lg mx-auto w-full">
+<div class="rounded-xl p-space-md bg-surface-container flex flex-col gap-3">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface italic">
+        “We hosted my sister’s engagement ceremony on Abhinandan’s lawn. The evening lights and the garden breeze made it feel like a destination wedding right here in Seoni. Catering and seating was top-class!”
+      </p>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold text-primary">— Ankit &amp; Family (Barapathar)</span>
+<span class="font-label-sm text-label-sm">Engagement of 220 Guests</span>
+</div>
+</div>
+</section>
+</div>
+<script>
+  function selectOccasion(occasionName) {
+    const selectElem = document.getElementById('occasion-select');
+    if (selectElem) {
+      selectElem.value = occasionName;
+    }
+    const formSection = document.getElementById('inquiry-form-section');
+    if (formSection) {
+      formSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  function handleInquirySubmit(event) {
+    event.preventDefault();
+    const form = document.getElementById('event-inquiry-form');
+    const successCard = document.getElementById('form-success-card');
+    
+    if (form && successCard) {
+      form.classList.add('hidden');
+      successCard.classList.remove('hidden');
+      
+      // Auto restore after 7 seconds if needed
+      setTimeout(() => {
+        form.reset();
+        form.classList.remove('hidden');
+        successCard.classList.add('hidden');
+      }, 7000);
+    }
+  }
+
+  // Pre-fill tomorrow as default min date
+  (function initDateMin() {
+    const dateInput = document.getElementById('event-date');
+    if (dateInput) {
+      const tomorrow = new Date();
+      tomorrow.setDate(tomorrow.getDate() + 1);
+      dateInput.min = tomorrow.toISOString().split('T')[0];
+    }
+  })();
+</script><footer class="w-full bg-surface-container-low mt-space-lg px-gutter-mobile py-space-lg mb-24 shadow-[0_-1px_12px_rgba(48,32,25,0.03)]"><div class="flex flex-col gap-space-md max-w-lg mx-auto"><div class="flex items-center gap-space-xs"><img alt="Abhinandan Garden Restaurant Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bEY5rFwf006mDLCUB_agzY2F8ujTWef6whnsNPnhOrIEXGURgLyki7uLN6jQNNskD93YtTTanyegUk3Kqu9ziA_PxOon64SvPT6psqcLEIj71e2SHwwsYaxLgoTA6H5syWsRJ0qsfEFNJV9_8Gx50OZRs5a8msBXaCV-l58YSL-Slt5HXySDVDEkrACE_nSkVDLd3t6g5MQpBQBIOzfvb9Z0BMydQjOVwwW-Ry8"/><span class="font-title-lg text-title-lg text-primary">Abhinandan Garden Restaurant</span></div><div class="space-y-space-xs"><p class="font-body-sm text-body-sm text-on-surface-variant flex items-start gap-2"><span class="material-symbols-outlined text-[18px] text-secondary mt-0.5">location_on</span><span>Barapathar, Seoni, Madhya Pradesh 480661</span></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">schedule</span><span>Open Daily: 11:00 AM – 11:00 PM</span></p><p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-secondary">phone_iphone</span><a class="hover:underline" href="tel:+919522266688">+91 95222 66688</a></p></div><div class="flex items-center justify-between pt-space-xs"><span class="font-label-sm text-label-sm text-outline">© Abhinandan Hospitality</span><a class="font-label-sm text-label-sm text-secondary hover:underline font-bold uppercase tracking-wider" href="tel:+919522266688">Direct Desk</a></div></div></footer></main><a aria-label="WhatsApp Enquiry" class="fixed bottom-24 right-4 z-40 w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_8px_20px_rgba(48,32,25,0.18)] flex items-center justify-center transition-transform active:scale-95" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20would%20like%20to%20make%20an%20enquiry"><span class="material-symbols-outlined text-[24px]">chat</span></a><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(48,32,25,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-1"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">yard</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Menu</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 transition-colors text-primary font-bold" data-path="celebrations-and-events" href="#"><span class="material-symbols-outlined text-[22px]">celebration</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Events</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="photo-gallery" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Gallery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="book-table" href="#"><span class="material-symbols-outlined text-[22px]">event_seat</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Book Table</span></a></div></nav></body></html>

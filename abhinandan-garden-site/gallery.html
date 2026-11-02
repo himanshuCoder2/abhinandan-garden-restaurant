@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#180b06", "on-primary": "#ffffff", "primary-container": "#302019", "surface-container-lowest": "#ffffff", "outline": "#817470", "on-secondary": "#ffffff", "on-error": "#ffffff", "secondary": "#755a2a", "outline-variant": "#d2c3be", "surface-dim": "#dedad0", "secondary-container": "#fcd89c", "on-tertiary-fixed-variant": "#733517", "primary-fixed": "#faddd1", "inverse-surface": "#32302a", "on-secondary-fixed": "#271900", "on-tertiary-fixed": "#360f00", "on-secondary-container": "#775d2d", "on-surface-variant": "#4f4541", "inverse-on-surface": "#f5f0e6", "on-background": "#1d1c16", "on-secondary-fixed-variant": "#5b4315", "inverse-primary": "#dcc1b6", "error": "#ba1a1a", "surface-container-high": "#ede8de", "on-primary-fixed": "#271811", "surface-container-highest": "#e7e2d8", "primary-fixed-dim": "#dcc1b6", "surface-container": "#f2ede3", "on-primary-container": "#9e867c", "on-primary-fixed-variant": "#56423a", "tertiary": "#200600", "secondary-fixed-dim": "#e5c188", "on-tertiary-container": "#c57753", "surface-container-low": "#f8f3e9", "tertiary-fixed-dim": "#ffb596", "surface": "#fef9ef", "on-tertiary": "#ffffff", "on-surface": "#1d1c16", "tertiary-fixed": "#ffdbcd", "error-container": "#ffdad6", "on-error-container": "#93000a", "background": "#fef9ef", "tertiary-container": "#431500", "surface-bright": "#fef9ef", "secondary-fixed": "#ffdea9", "surface-variant": "#e7e2d8", "surface-tint": "#6f5a51" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "margin": "3rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><a class="flex items-center gap-space-xs min-w-0 flex-1" data-path="abhinandan-garden-home" href="#"><img alt="Abhinandan Garden Restaurant Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bEY5rFwf006mDLCUB_agzY2F8ujTWef6whnsNPnhOrIEXGURgLyki7uLN6jQNNskD93YtTTanyegUk3Kqu9ziA_PxOon64SvPT6psqcLEIj71e2SHwwsYaxLgoTA6H5syWsRJ0qsfEFNJV9_8Gx50OZRs5a8msBXaCV-l58YSL-Slt5HXySDVDEkrACE_nSkVDLd3t6g5MQpBQBIOzfvb9Z0BMydQjOVwwW-Ry8"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1"><span class="font-title-lg text-title-lg text-primary tracking-tight truncate">Abhinandan</span><span class="hidden sm:inline font-body-sm text-body-sm text-secondary italic">Garden</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest truncate">Celebrations And Events</span></div></a><div class="flex items-center gap-1 sm:gap-space-xs flex-shrink-0"><a aria-label="Call Restaurant" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-secondary-container transition-colors" href="tel:+919522266688"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Notifications and Messages" class="relative w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-surface-container-high transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><a aria-label="Profile &amp; Concierge" class="w-11 h-11 rounded-full flex items-center justify-center ml-0.5" data-path="profile-concierge" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-28">
+<!-- Top Intro Section -->
+<section class="px-gutter-mobile pt-space-md flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[18px]">photo_library</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">Atmosphere &amp; Memory Archive</span>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Visual Journey &amp; Lawn Atmosphere</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 leading-relaxed">
+        Explore our open-air starlit garden, royal banquet setups, culinary craftsmanship, and joyous celebratory memories in Barapathar, Seoni.
+      </p>
+</div>
+<!-- Social Proof Pill Card -->
+<div class="bg-surface-container-low rounded-xl p-3 shadow-sm flex items-center justify-between gap-space-sm mt-1">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-9 h-9 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">camera_enhance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-primary truncate">@abhinandangardenseoni</span>
+<span class="material-symbols-outlined text-secondary text-[16px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">4.8k Community Lovers • 1.2k+ Tagged Memories</span>
+</div>
+</div>
+<a class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 active:scale-95 transition-transform" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span>Follow</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</section>
+<!-- Filter Pills (Horizontally Scrollable) -->
+<section class="mt-space-md w-full overflow-x-auto no-scrollbar px-gutter-mobile">
+<div class="flex items-center gap-2 min-w-max pb-1" id="filter-pill-group">
+<button class="filter-btn active-tab px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all shadow-sm bg-primary text-on-primary" onclick="filterGallery('all', this)">
+        All (48)
+      </button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant" onclick="filterGallery('garden', this)">
+        Garden &amp; Lawns (16)
+      </button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant" onclick="filterGallery('celebrations', this)">
+        Celebrations &amp; Decors (12)
+      </button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant" onclick="filterGallery('culinary', this)">
+        Culinary &amp; Sizzlers (14)
+      </button>
+<button class="filter-btn px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant" onclick="filterGallery('night', this)">
+        Night Fairy Lights (6)
+      </button>
+</div>
+</section>
+<!-- Interactive Gallery Cards (Dynamic Layout) -->
+<section class="px-gutter-mobile mt-space-md flex flex-col gap-4" id="gallery-container">
+<!-- Photo 1: Grand Lawn Night Reception -->
+<div class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="celebrations night garden" data-desc="Fairy light canopy over royal stage backdrop with open banquet tables set under starry Seoni night skies." data-likes="142" data-tag="Wedding Reception Setup" data-title="Grand Lawn Night Reception">
+<div class="relative w-full h-64 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sprawling Indian grand wedding banquet lawn at night with illuminated fairy light canopies, warm golden uplighting, elegant circular guest tables, deep roasted espresso and gold seating accents, lush greenery borders under an open starry night sky." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPUvKmd_4s9FvWFVnFCQr7hljYgA-cCvrMYXnfQRwU668Vu-96TVbk5aibZ11zvWVsM0L0yre3HteEwlcu42RW7YO6-b3N6EbonlRxQSfuJsAqRt6TVRKAmBtXVK9Q-XsQ2r42UqHWCvCKShXaz0MOvTXfvwjtVqNINOTCSkDWp_gSHD9FOFVOl2MdYsaaYdVawY4kBfaDgem4fVnPjkm9kpKrN5IYFdCO_SkCL7Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm">Decor &amp; Night Lawn</span>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/80 backdrop-blur-md text-primary-fixed font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">groups</span> 450+ Guests
+          </span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-md text-primary flex items-center justify-center active:scale-90 transition-transform" onclick="openLightbox(0)">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm tracking-wider uppercase opacity-80">Royal Setup</span>
+<h3 class="font-headline-sm text-headline-sm text-on-primary leading-tight">Grand Lawn Night Reception</h3>
+</div>
+<button class="like-btn px-2.5 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary flex items-center gap-1 active:scale-90 transition-transform" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count">142</span>
+</button>
+</div>
+</div>
+<div class="p-3.5 flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-label-sm text-label-sm">A</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant font-medium">Curated by Abhinandan Decor Team</span>
+</div>
+<button class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5" onclick="openLightbox(0)">
+<span>Details</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- 2-Column Split for Compact Moments -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Photo 2: Chef's Signature Sizzler -->
+<div class="gallery-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="culinary" data-desc="Freshly charred cottage cheese, spiced bell peppers, and fragrant smoking herbs served straight on a roaring cast-iron skillet." data-likes="89" data-tag="Outdoor Dining Menu" data-title="Signature Paneer Tikka Sizzler">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="A sizzling cast-iron gourmet vegetarian sizzler platter served on wooden trivet with fresh cottage cheese, charred bell peppers, charred onions, aromatic smoke plumes rising, garnished with coriander and lemon wedge in a warm garden restaurant environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGcjC-Bn1gvLTqsyZxuHlWXmz8hJrGRCe67d7tNSi7Mda6g7XhcBAxL6L_n9T_yG118h1ai4bZCw_cJGoZhgt8peLX_TkG2H-5e9cHKVg0eytJM99JYQNcnLt9sIESd51crx32QjrBaszbNIepEgjnOG9spIujUfsMNLEJEoYjxn41VlPTJvH0Rdfk_uni5qN2Faf6Jyh1fcsPXyj_IXKnQlEyYA0pJih8AMzXxAk"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm">Culinary</span>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md text-primary flex items-center justify-center" onclick="openLightbox(1)">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-primary">
+<span class="font-title-md text-title-md text-on-primary text-sm line-clamp-1">Sizzler Platter</span>
+<button class="flex items-center gap-0.5 bg-black/30 px-1.5 py-0.5 rounded-full" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count text-xs">89</span>
+</button>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Sizzling &amp; Fresh</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">restaurant</span>
+</div>
+</div>
+<!-- Photo 3: Intimate Romantic Gazebo -->
+<div class="gallery-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="garden night celebrations" data-desc="Candlelit cabana setup surrounded by floral arrangements, warm marquee bulbs, and soft acoustic dining breezes." data-likes="116" data-tag="Couple Cabana Dinners" data-title="Intimate Romantic Gazebo">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Intimate romantic open-air wooden garden gazebo at twilight with warm candle lanterns, ivory drapes, rose petal centerpieces, wine glasses, and surrounding manicured trees lit with fairy lights in a peaceful retreat setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_6lroDG1m3zW3XzDHV0pyvDkumIxzHRh8gmRnRonE1l1Um-6g2TQudWAUNFUw49UtzS6Rxy4ENmr_P47iUmW1oivPMOk-UgW2fIeKYyK-URJgK1tGOhZH41azYHzvJTHWT0LChj1JNzU0yoDR1-z1bOjgDpcpMlLdqf_TQQ1Cp4EMYgGQhUHDD_a_5Q_LGsZlF7ih7IVXM_zQi--sek1DfcHjSxpOuI4OUeAHPJQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm">Cabana</span>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md text-primary flex items-center justify-center" onclick="openLightbox(2)">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-primary">
+<span class="font-title-md text-title-md text-on-primary text-sm line-clamp-1">Romantic Gazebo</span>
+<button class="flex items-center gap-0.5 bg-black/30 px-1.5 py-0.5 rounded-full" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count text-xs">116</span>
+</button>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Candlelit Garden</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">favorite</span>
+</div>
+</div>
+</div>
+<!-- Photo 4: Birthday Fiesta & Balloons -->
+<div class="gallery-card group bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="celebrations garden" data-desc="Pastel balloon arches, thematic cartoon cutouts, and dedicated dessert counters set in the family lawn area." data-likes="97" data-tag="Kids &amp; Family Birthdays" data-title="Birthday Fiesta &amp; Custom Dessert Corner">
+<div class="relative w-full h-56 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Charming outdoor birthday celebration backdrop on lush grass lawn with pastel green, peach, and gold balloon arch, decorative wooden sign board, tiers of colorful celebration pastries and cupcakes, under gentle warm late-afternoon sunshine." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsBkmR9Pv_vLJoC7Y08j447kIfLw7-hkv0dxxVamJ8j-lT6HIAggzUb9WnsFmfwmdXrO6bJl67YQXsPjUC5PBayHUiZzp8R2FMWmnWDD2eYx-pIU7m_7ofhXLXC4Z-zWCK4KGGQpPTnTsaEF9xYCXAmZhQ6QIMkT_mmEF2mf3Oe02YO59ZiyCddIP1edvhjiZc1n7DaPrhkXyHbGp0p2KYT0tc-3_byyC5j-9gqJI"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent"></div>
+<div class="absolute top-3 left-3 flex gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm">Family Celebration</span>
+</div>
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface/85 backdrop-blur-md text-primary flex items-center justify-center" onclick="openLightbox(3)">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between text-on-primary">
+<div>
+<span class="font-label-sm text-label-sm tracking-wider uppercase opacity-80">Milestone Moments</span>
+<h3 class="font-title-lg text-title-lg text-on-primary leading-tight">Birthday Fiesta &amp; Dessert Lawn</h3>
+</div>
+<button class="like-btn px-2.5 py-1 rounded-full bg-surface-container-lowest/20 backdrop-blur-md text-on-primary flex items-center gap-1" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count">97</span>
+</button>
+</div>
+</div>
+<div class="p-3.5 flex items-center justify-between bg-surface-container-low">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Customized floral &amp; balloon themes available on request</span>
+<button class="text-secondary font-label-sm text-label-sm flex items-center gap-0.5 shrink-0" onclick="openLightbox(3)">
+<span>View</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- 2-Column Split for Food & Ambiance -->
+<div class="grid grid-cols-2 gap-3">
+<!-- Photo 5: Evening Starlit Fountain Ambiance -->
+<div class="gallery-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="garden night" data-desc="Gleaming stone fountain feature surrounded by lantern-lit walking stone pathways and lush manicured hedges." data-likes="134" data-tag="Lawn Heritage Landmark" data-title="Evening Central Fountain &amp; Pathways">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Serene stone water fountain in an evening garden courtyard lit by submerged warm amber LEDs, surrounded by neatly bordered stone pathways and tall swaying date palm trees illuminated by subtle spotlight beams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfktTooBEuWcsxWou9DTNz9higLj1tT279ar4NrD1JswobaqqoXXuXKEYKRReHDBGjyaPnf6SvhlGwTOSKBjIKj9t2NON8xkwnzOd105pOMknRj_y15JdYt-PWa8aT36EzmVHTcQagMrgwiMQOxIAZQU9XrMGonlHYPSOtJTRiBG3WMqSqzjjTyp9NhAsF-b7HW5hwahTGv4byvGiG_Y22kjcR04xvPH7qmXxaRik"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm">Fountain</span>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md text-primary flex items-center justify-center" onclick="openLightbox(4)">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-primary">
+<span class="font-title-md text-title-md text-on-primary text-sm line-clamp-1">Fountain Garden</span>
+<button class="flex items-center gap-0.5 bg-black/30 px-1.5 py-0.5 rounded-full" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count text-xs">134</span>
+</button>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Night Walkway</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">park</span>
+</div>
+</div>
+<!-- Photo 6: Authentic Tandoori Oven & Handi -->
+<div class="gallery-card group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col transition-all duration-300" data-category="culinary" data-desc="Slow-cooked Dal Makhani simmered overnight and butter garlic naans fresh out of the live garden tandoor." data-likes="168" data-tag="Live Kitchen Specialties" data-title="Clay Oven Breads &amp; Rich Handi Gravy">
+<div class="relative w-full h-44 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="Traditional Indian copper handi with slow-cooked creamy dal makhani garnished with white butter swirl and fresh coriander, placed beside freshly baked golden butter garlic naan with charred crisp blister pockets on a rustic textured dark table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUXNA6D31e_RQCbk0b2d0KkPvEDij26_T_kx3M6Jjsf-MTJl-7av075hSbSb-OXV03fUyF2KGRGvhky4eaVHAijP3zVct-Lxz5p-sCh-yg9ahq429Up2b_-QswI1tvx3Lik6L3eCV0_2SEXBrHAna73n4KVdPS77NutZ6xf3cwnj4cKsVymV0653N_YlLWjLwfPcJCS4RwxYVRO1VgJPi-18wu4jPWjt5WEa1eC8I"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/75 via-transparent to-transparent"></div>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-surface/90 backdrop-blur-md text-secondary font-label-sm text-label-sm">Tandoor</span>
+<button class="absolute top-2 right-2 w-7 h-7 rounded-full bg-surface/80 backdrop-blur-md text-primary flex items-center justify-center" onclick="openLightbox(5)">
+<span class="material-symbols-outlined text-[16px]">fullscreen</span>
+</button>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-on-primary">
+<span class="font-title-md text-title-md text-on-primary text-sm line-clamp-1">Clay Oven Delicacies</span>
+<button class="flex items-center gap-0.5 bg-black/30 px-1.5 py-0.5 rounded-full" onclick="toggleCardLike(this)">
+<span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm like-count text-xs">168</span>
+</button>
+</div>
+</div>
+<div class="p-2.5 bg-surface-container-low flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant truncate">Live Kitchen</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">soup_kitchen</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Guest Moments & Community Stories -->
+<section class="mt-space-lg px-gutter-mobile flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">diversity_1</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider">Real Guest Captures</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-primary tracking-tight">Community Stories &amp; Memories</h2>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-surface-container font-label-sm text-label-sm text-secondary">Verified Guests</span>
+</div>
+<!-- Horizontal Swipe Moments -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar py-1">
+<!-- Guest Story 1 -->
+<div class="w-64 shrink-0 bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Joyful multi-generational Indian family gathered around a beautifully decorated outdoor anniversary dinner table at night with glowing candles, smiling warmly, holding fresh rose bouquets in a celebratory garden atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVAK7vOBCTl_4wnrQlw48gcFAugk1zUMBeGdrfdHj8M3nr4dGXGAY8tKW5TCKX297GMsfyKNctAOYbKdXAQ7BDpgDfzCNBcsdOkz0hXH5oYKnZseaUy1QLwkN-kNkOBKP7VN_6zrgj5y-eK7zKhdSuQUIBQuF7sng7uKml2gW3_EMkTO0d-dQoluuR_sVxfEcfOqvj9Yzjk0Py-90cHdI_kJwb1Vn9sBhxdu8NuFM"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">25th Anniversary</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">Verma Family</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Last Weekend</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 italic">
+            "The cabana lighting and live paneer sizzlers made Dad's 50th birthday unforgettable. Superb hospitality!"
+          </p>
+</div>
+</div>
+<!-- Guest Story 2 -->
+<div class="w-64 shrink-0 bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A group of smiling university friends celebrating a vibrant graduation and birthday party outdoors with sparklers and laughter under warm fairy lights on green grass." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4pmRrcqgyx7c6onMZABqB0gFeymn3aeyqbgI9L3HwD7IjDfVySS_3A1cpWnQD36c1yne4FphZz058wbMyEmxgdfyXxZeIR5HJddTY2ZkQPGpeKIsqdh8xXkgTNHiyoeHjccIvP-F0v1yh8HSoTultaPjQPVpjIGsREhCBxbi-EVDhQxg7WIxsKqCwM17m_Jd4fjWdqKpoPhJ2LhBKlxGFUOpa73Fa5gyadspHNGc"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">Pooja T.'s Birthday</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">Pooja &amp; Friends</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">3 days ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 italic">
+            "Best photo spots in all of Seoni. Every corner has aesthetic fairy lighting and cozy seating."
+          </p>
+</div>
+</div>
+<!-- Guest Story 3 -->
+<div class="w-64 shrink-0 bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-2.5">
+<div class="relative w-full h-36 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A newly engaged Indian couple posing under an arch of jasmine and marigolds with soft illumination during twilight hours in a landscaped lawn setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBA4v4A8y7HDC-4zJAlhKx1PaQjKXZlycYXkXOFammspG8-hKdyTQyaDwKPiNq-thvSIK3DoLWeqgtGOVWUQw-IvdTA8H9R5Uy1T7XgzNL19_w5kQ6-yaSZF2hX_wpsaBRMwmlmx1UP7fuj6eF2FmO9F_edbtC7Td_3VmtJB8RQ4N2hxZhC1b6Wz1p9MChDNom-uhIzQads015ay2AEqR2j6CT9aldHoywtj9FQ3hE"/>
+<span class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-primary/80 backdrop-blur-sm text-on-primary font-label-sm text-label-sm">Rohan &amp; Neha Ring Ceremony</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-primary">Sharma Family</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">2 weeks ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2 italic">
+            "The banquet lawn managed our 350 guests seamlessly. Pure family vibe and regal decor."
+          </p>
+</div>
+</div>
+</div>
+<!-- Community Upload Action CTA -->
+<div class="bg-surface-container rounded-2xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 shadow-sm mt-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">add_a_photo</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-primary">Celebrated with us recently?</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Share your favorite frame or tag #AbhinandanMoments</span>
+</div>
+</div>
+<a class="w-full sm:w-auto px-4 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md text-center active:scale-95 transition-transform flex items-center justify-center gap-1.5" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden,%20I%20would%20like%20to%20share%20my%20event%20photographs%20for%20the%20community%20gallery!" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px]">upload</span>
+<span>Share Your Memory</span>
+</a>
+</div>
+</section>
+<!-- Bottom Event Planning Dispatch Banner -->
+<section class="mt-space-lg px-gutter-mobile">
+<div class="bg-primary-container text-on-primary rounded-2xl p-4 shadow-md flex flex-col gap-3 relative overflow-hidden">
+<div class="absolute -right-8 -bottom-8 w-32 h-32 rounded-full bg-secondary/20 pointer-events-none blur-xl"></div>
+<div class="flex items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined text-[18px]">event_available</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest font-semibold">Reserve Lawns &amp; Decor Packages</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-primary">Love these setups for your celebration?</h3>
+<p class="font-body-sm text-body-sm text-on-primary-container mt-1">
+          Lock in custom gazebo setups, wedding banquets, fairy light themes, and multi-course catering in Barapathar, Seoni.
+        </p>
+</div>
+<div class="flex items-center gap-2 pt-1">
+<a class="flex-1 py-2.5 px-4 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md flex items-center justify-center gap-1.5 active:scale-95 transition-transform shadow-sm" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20saw%20your%20photo%20gallery%20and%20would%20like%20to%20check%20lawn%20availability%20and%20decor%20themes" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Check Lawn Availability</span>
+</a>
+<a class="px-3.5 py-2.5 rounded-lg bg-surface-container-highest/20 text-on-primary font-label-md text-label-md flex items-center justify-center active:scale-95 transition-transform" href="tel:+919522266688">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Lightbox Modal -->
+<div class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex-col justify-between p-4 transition-opacity duration-300" id="lightbox-modal">
+<!-- Top Action Bar -->
+<div class="flex items-center justify-between text-white pt-safe">
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm bg-white/20 px-2 py-0.5 rounded-full" id="lb-counter">1 of 6</span>
+<span class="font-label-sm text-label-sm text-amber-300" id="lb-category">Garden Decor</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center text-white active:scale-90 transition-transform" onclick="shareActivePhoto()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-white/20 flex items-center justify-center text-white active:scale-90 transition-transform" onclick="closeLightbox()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Center Carousel Image Viewport -->
+<div class="flex-1 flex items-center justify-center relative my-4">
+<button class="absolute left-1 z-10 w-10 h-10 rounded-full bg-black/40 text-white flex items-center justify-center active:scale-90 transition-transform" onclick="prevLightboxSlide()">
+<span class="material-symbols-outlined text-[22px]">chevron_left</span>
+</button>
+<div class="w-full max-w-md h-full flex flex-col items-center justify-center">
+<img class="max-h-[512px] w-auto max-w-full rounded-xl object-contain shadow-2xl transition-all duration-300" data-alt="Full display of Abhinandan Garden restaurant setup featuring grand fairy lighting, festive banquet seating, and manicured green grounds." id="lb-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi3JbMD4Q5vLSiRrH0v6Jo5ZZEdn6D0E4-LRoSOszFi7PYJANiNoNJp4sAdx8srEi2ngSeYZxoWhYrZOXz7keSFIgM0OQLcuFkMGLIUNSUSuxm8wpYIc2zKm9VHK0B1UAHOSuj1PiMIAEQUeCbjCUM539HvEZhvALqW6rmkzZMpfa4Wh6p0Ofcf3NPD6n-MR8aPvbq49RwduJFFM9MHLFD_3nGpBrvA1G8lKqnHLM"/>
+</div>
+<button class="absolute right-1 z-10 w-10 h-10 rounded-full bg-black/40 text-white flex items-center justify-center active:scale-90 transition-transform" onclick="nextLightboxSlide()">
+<span class="material-symbols-outlined text-[22px]">chevron_right</span>
+</button>
+</div>
+<!-- Bottom Caption & Actions -->
+<div class="flex flex-col gap-2 pb-safe bg-black/60 p-3.5 rounded-2xl backdrop-blur-md text-white">
+<div class="flex items-start justify-between gap-2">
+<div>
+<h4 class="font-headline-sm text-headline-sm text-white leading-snug" id="lb-title">Grand Lawn Night Reception</h4>
+<p class="font-body-sm text-body-sm text-stone-300 mt-0.5 line-clamp-2 leading-relaxed" id="lb-desc">
+            Fairy light canopy over royal stage backdrop with open banquet tables set under starry Seoni night skies.
+          </p>
+</div>
+<button class="flex items-center gap-1 bg-white/10 px-3 py-1.5 rounded-full shrink-0" id="lb-like-btn" onclick="toggleLightboxLike()">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">favorite</span>
+<span class="font-label-sm text-label-sm" id="lb-likes">142</span>
+</button>
+</div>
+<div class="flex items-center justify-between pt-1 border-t border-white/10">
+<span class="font-label-sm text-label-sm text-amber-200 truncate" id="lb-tag">Royal Wedding Decor</span>
+<a class="font-label-sm text-label-sm text-amber-300 flex items-center gap-0.5" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden,%20I%20am%20interested%20in%20the%20setup:%20" id="lb-enquire" rel="noopener noreferrer" target="_blank">
+<span>Inquire This Theme</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Lightbox Data Store
+  const galleryItems = [
+    {
+      title: "Grand Lawn Night Reception",
+      category: "Celebrations & Decors",
+      tag: "Wedding Reception Setup (450+ Capacity)",
+      desc: "Fairy light canopy over royal stage backdrop with open banquet tables set under starry Seoni night skies.",
+      likes: 142,
+      alt: "A sprawling Indian grand wedding banquet lawn at night with illuminated fairy light canopies, warm golden uplighting, elegant circular guest tables, deep roasted espresso and gold seating accents, lush greenery borders under an open starry night sky."
+    },
+    {
+      title: "Signature Paneer Tikka Sizzler",
+      category: "Culinary & Sizzlers",
+      tag: "Chef's Garden Special",
+      desc: "Freshly charred cottage cheese, spiced bell peppers, and fragrant smoking herbs served straight on a roaring cast-iron skillet.",
+      likes: 89,
+      alt: "A sizzling cast-iron gourmet vegetarian sizzler platter served on wooden trivet with fresh cottage cheese, charred bell peppers, charred onions, aromatic smoke plumes rising, garnished with coriander and lemon wedge in a warm garden restaurant environment."
+    },
+    {
+      title: "Intimate Romantic Gazebo",
+      category: "Garden & Lawns",
+      tag: "Private Couple Cabana",
+      desc: "Candlelit cabana setup surrounded by floral arrangements, warm marquee bulbs, and soft acoustic dining breezes.",
+      likes: 116,
+      alt: "Intimate romantic open-air wooden garden gazebo at twilight with warm candle lanterns, ivory drapes, rose petal centerpieces, wine glasses, and surrounding manicured trees lit with fairy lights in a peaceful retreat setting."
+    },
+    {
+      title: "Birthday Fiesta & Dessert Lawn",
+      category: "Celebrations & Decors",
+      tag: "Kids & Family Party Lawn",
+      desc: "Pastel balloon arches, thematic cartoon cutouts, and dedicated dessert counters set in the family lawn area.",
+      likes: 97,
+      alt: "Charming outdoor birthday celebration backdrop on lush grass lawn with pastel green, peach, and gold balloon arch, decorative wooden sign board, tiers of colorful celebration pastries and cupcakes, under gentle warm late-afternoon sunshine."
+    },
+    {
+      title: "Evening Central Fountain & Pathways",
+      category: "Night Fairy Lights",
+      tag: "Heritage Water Feature",
+      desc: "Gleaming stone fountain feature surrounded by lantern-lit walking stone pathways and lush manicured hedges.",
+      likes: 134,
+      alt: "Serene stone water fountain in an evening garden courtyard lit by submerged warm amber LEDs, surrounded by neatly bordered stone pathways and tall swaying date palm trees illuminated by subtle spotlight beams."
+    },
+    {
+      title: "Clay Oven Breads & Rich Handi Gravy",
+      category: "Culinary & Sizzlers",
+      tag: "Live Handi Specialties",
+      desc: "Slow-cooked Dal Makhani simmered overnight and butter garlic naans fresh out of the live garden tandoor.",
+      likes: 168,
+      alt: "Traditional Indian copper handi with slow-cooked creamy dal makhani garnished with white butter swirl and fresh coriander, placed beside freshly baked golden butter garlic naan with charred crisp blister pockets on a rustic textured dark table."
+    }
+  ];
+
+  let currentLbIndex = 0;
+
+  function filterGallery(category, clickedBtn) {
+    // Update button states
+    const buttons = document.querySelectorAll('#filter-pill-group .filter-btn');
+    buttons.forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+
+    clickedBtn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    clickedBtn.classList.add('bg-primary', 'text-on-primary');
+
+    // Filter cards
+    const cards = document.querySelectorAll('#gallery-container .gallery-card');
+    cards.forEach(card => {
+      const cardCats = card.getAttribute('data-category');
+      if (category === 'all' || cardCats.includes(category)) {
+        card.style.display = '';
+        card.style.opacity = '0';
+        setTimeout(() => {
+          card.style.transition = 'opacity 250ms ease';
+          card.style.opacity = '1';
+        }, 30);
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function openLightbox(index) {
+    currentLbIndex = index;
+    updateLightboxUI();
+    const modal = document.getElementById('lightbox-modal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  }
+
+  function closeLightbox() {
+    const modal = document.getElementById('lightbox-modal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+  }
+
+  function updateLightboxUI() {
+    const item = galleryItems[currentLbIndex];
+    document.getElementById('lb-counter').textContent = `${currentLbIndex + 1} of ${galleryItems.length}`;
+    document.getElementById('lb-category').textContent = item.category;
+    document.getElementById('lb-title').textContent = item.title;
+    document.getElementById('lb-desc').textContent = item.desc;
+    document.getElementById('lb-tag').textContent = item.tag;
+    document.getElementById('lb-likes').textContent = item.likes;
+    
+    const lbImg = document.getElementById('lb-image');
+    lbImg.setAttribute('data-alt', item.alt);
+    lbImg.src = 'placeholder';
+
+    const enquireLink = document.getElementById('lb-enquire');
+    enquireLink.href = `https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden,%20I%20am%20interested%20in%20booking%20the%20setup:%20${encodeURIComponent(item.title)}`;
+  }
+
+  function prevLightboxSlide() {
+    currentLbIndex = (currentLbIndex - 1 + galleryItems.length) % galleryItems.length;
+    updateLightboxUI();
+  }
+
+  function nextLightboxSlide() {
+    currentLbIndex = (currentLbIndex + 1) % galleryItems.length;
+    updateLightboxUI();
+  }
+
+  function toggleCardLike(btn) {
+    const countEl = btn.querySelector('.like-count');
+    let current = parseInt(countEl.textContent, 10);
+    const icon = btn.querySelector('.material-symbols-outlined');
+    
+    if (btn.dataset.liked === "true") {
+      btn.dataset.liked = "false";
+      countEl.textContent = current - 1;
+      icon.style.fontVariationSettings = "'FILL' 0";
+    } else {
+      btn.dataset.liked = "true";
+      countEl.textContent = current + 1;
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+  }
+
+  function toggleLightboxLike() {
+    const btn = document.getElementById('lb-like-btn');
+    const likesEl = document.getElementById('lb-likes');
+    let likes = parseInt(likesEl.textContent, 10);
+    const icon = btn.querySelector('.material-symbols-outlined');
+
+    if (btn.dataset.liked === "true") {
+      btn.dataset.liked = "false";
+      galleryItems[currentLbIndex].likes -= 1;
+      likesEl.textContent = galleryItems[currentLbIndex].likes;
+      icon.style.fontVariationSettings = "'FILL' 0";
+    } else {
+      btn.dataset.liked = "true";
+      galleryItems[currentLbIndex].likes += 1;
+      likesEl.textContent = galleryItems[currentLbIndex].likes;
+      icon.style.fontVariationSettings = "'FILL' 1";
+    }
+  }
+
+  function shareActivePhoto() {
+    const item = galleryItems[currentLbIndex];
+    if (navigator.share) {
+      navigator.share({
+        title: item.title,
+        text: `Look at this stunning ambiance at Abhinandan Garden Restaurant, Seoni: ${item.title}`,
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      navigator.clipboard?.writeText(window.location.href);
+      alert('Photo link copied to clipboard!');
+    }
+  }
+</script></main><a aria-label="WhatsApp Enquiry" class="fixed bottom-24 right-4 z-40 w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_8px_20px_rgba(48,32,25,0.18)] flex items-center justify-center transition-transform active:scale-95" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20would%20like%20to%20make%20an%20enquiry"><span class="material-symbols-outlined text-[24px]">chat</span></a><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(48,32,25,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-1"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="abhinandan-garden-home" href="#"><span class="material-symbols-outlined text-[22px]">yard</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dining-menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebrations-events" href="#"><span class="material-symbols-outlined text-[22px]">celebration</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Events</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 transition-colors text-primary font-bold" data-path="photo-gallery" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Gallery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile-concierge" href="#"><span class="material-symbols-outlined text-[22px]">room_service</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Concierge</span></a></div></nav></body></html>

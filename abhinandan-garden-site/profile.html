@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#180b06", "on-primary": "#ffffff", "primary-container": "#302019", "surface-container-lowest": "#ffffff", "outline": "#817470", "on-secondary": "#ffffff", "on-error": "#ffffff", "secondary": "#755a2a", "outline-variant": "#d2c3be", "surface-dim": "#dedad0", "secondary-container": "#fcd89c", "on-tertiary-fixed-variant": "#733517", "primary-fixed": "#faddd1", "inverse-surface": "#32302a", "on-secondary-fixed": "#271900", "on-tertiary-fixed": "#360f00", "on-secondary-container": "#775d2d", "on-surface-variant": "#4f4541", "inverse-on-surface": "#f5f0e6", "on-background": "#1d1c16", "on-secondary-fixed-variant": "#5b4315", "inverse-primary": "#dcc1b6", "error": "#ba1a1a", "surface-container-high": "#ede8de", "on-primary-fixed": "#271811", "surface-container-highest": "#e7e2d8", "primary-fixed-dim": "#dcc1b6", "surface-container": "#f2ede3", "on-primary-container": "#9e867c", "on-primary-fixed-variant": "#56423a", "tertiary": "#200600", "secondary-fixed-dim": "#e5c188", "on-tertiary-container": "#c57753", "surface-container-low": "#f8f3e9", "tertiary-fixed-dim": "#ffb596", "surface": "#fef9ef", "on-tertiary": "#ffffff", "on-surface": "#1d1c16", "tertiary-fixed": "#ffdbcd", "error-container": "#ffdad6", "on-error-container": "#93000a", "background": "#fef9ef", "tertiary-container": "#431500", "surface-bright": "#fef9ef", "secondary-fixed": "#ffdea9", "surface-variant": "#e7e2d8", "surface-tint": "#6f5a51" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "margin": "3rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><a class="flex items-center gap-space-xs min-w-0 flex-1" data-path="abhinandan-garden-home" href="#"><img alt="Abhinandan Garden Restaurant Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bEY5rFwf006mDLCUB_agzY2F8ujTWef6whnsNPnhOrIEXGURgLyki7uLN6jQNNskD93YtTTanyegUk3Kqu9ziA_PxOon64SvPT6psqcLEIj71e2SHwwsYaxLgoTA6H5syWsRJ0qsfEFNJV9_8Gx50OZRs5a8msBXaCV-l58YSL-Slt5HXySDVDEkrACE_nSkVDLd3t6g5MQpBQBIOzfvb9Z0BMydQjOVwwW-Ry8"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1"><span class="font-title-lg text-title-lg text-primary tracking-tight truncate">Abhinandan</span><span class="hidden sm:inline font-body-sm text-body-sm text-secondary italic">Garden</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest truncate">Celebrations And Events</span></div></a><div class="flex items-center gap-1 sm:gap-space-xs flex-shrink-0"><a aria-label="Call Restaurant" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-secondary-container transition-colors" href="tel:+919522266688"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Notifications and Messages" class="relative w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-surface-container-high transition-colors" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary ring-2 ring-surface"></span></a><a aria-label="Profile &amp; Concierge" class="w-11 h-11 rounded-full flex items-center justify-center ml-0.5" data-path="profile-concierge" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full pb-28">
+<!-- Warm Welcome & Profile Hero Card -->
+<section class="px-gutter-mobile pt-space-sm pb-space-sm">
+<div class="relative overflow-hidden rounded-xl bg-primary text-on-primary p-space-md shadow-lg">
+<!-- Ambient Decorative Glow -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-secondary opacity-20 blur-2xl pointer-events-none"></div>
+<div class="flex items-start justify-between relative z-10">
+<div class="flex items-center gap-space-sm">
+<div class="relative">
+<img class="w-14 h-14 rounded-full object-cover shadow-md" data-alt="Warm refined portrait photograph of Ramesh Sharma, an Indian gentleman smiling politely against a subtle warm bokeh garden light backdrop, wearing an elegant kurta with linen texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqZ684aUT7f1FKX1A37S-4z9qMlCLDSQfHH8OVMeOzaBzHSinW4STPpdpOJIzb39iKWhpb015TpvG8r9EEAf7QR2472BJP0BmsCfDhb2pmvawaEFcV7NDfaqUxDQN0NK3mzh8Q_pWQ85FBK0LiucF3xv9IZfD3Z4KpqHPuy3wj4J2A4VQYFMjjeAKNflcuBDT1L3Cj9DRB1v3gwmlntQ0hHE6UvGY4zhPjzyFI_nc"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h1 class="font-headline-sm text-headline-sm text-on-primary tracking-tight">Ramesh Sharma</h1>
+</div>
+<p class="font-body-sm text-body-sm text-primary-fixed-dim flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px]">location_on</span>
+              Barapathar, Seoni
+            </p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm shadow-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+          Gold Member
+        </span>
+</div>
+<!-- Membership Stats Banner -->
+<div class="mt-space-md pt-space-sm grid grid-cols-3 gap-2 text-center rounded-lg bg-primary-container/70 p-space-xs">
+<div class="p-1">
+<p class="font-headline-sm text-headline-sm text-secondary-fixed">420</p>
+<p class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Club Points</p>
+</div>
+<div class="p-1">
+<p class="font-headline-sm text-headline-sm text-on-primary">2</p>
+<p class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Active Visits</p>
+</div>
+<div class="p-1">
+<p class="font-headline-sm text-headline-sm text-secondary-fixed">Tier 2</p>
+<p class="font-label-sm text-label-sm text-on-primary-container tracking-wider uppercase">Privilege</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Shortcut Pills -->
+<section class="px-gutter-mobile py-1">
+<div class="grid grid-cols-3 gap-2">
+<a class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-center shadow-sm" href="#bookings-section">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]">table_bar</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Bookings</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">2 Active</span>
+</a>
+<button class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors text-center shadow-sm" onclick="toggleSection('saved-dishes-panel')">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface">Saved Dishes</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">5 Items</span>
+</button>
+<a class="flex flex-col items-center justify-center p-3 rounded-xl bg-secondary-container/60 hover:bg-secondary-container transition-colors text-center shadow-sm" href="https://wa.me/919522266688?text=Hello%20Concierge,%20I%20am%20Ramesh%20Sharma%20(Gold%20Member)%20and%20need%20assistance." target="_blank">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container mb-1">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<span class="font-label-md text-label-md text-on-secondary-container font-semibold">Concierge</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Instant Desk</span>
+</a>
+</div>
+<!-- Collapsible Saved Dishes Tray (Interactive Delight) -->
+<div class="hidden mt-3 p-space-sm rounded-xl bg-surface-container-low shadow-sm transition-all duration-300" id="saved-dishes-panel">
+<div class="flex items-center justify-between pb-2 mb-2">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px] text-secondary">restaurant</span>
+<span class="font-title-md text-title-md">Favorite Garden Specialties</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface text-label-sm font-label-sm" onclick="toggleSection('saved-dishes-panel')">Close</button>
+</div>
+<div class="flex gap-2 overflow-x-auto pb-1">
+<div class="min-w-[130px] p-2 bg-surface-container-lowest rounded-lg shadow-sm">
+<img class="w-full h-16 rounded object-cover mb-1.5" data-alt="Plated paneer lababdar dish garnished with fresh coriander and heavy cream swirls in a traditional brass bowl, warm restaurant table setting at Abhinandan Garden." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl6jSNtAlY_lQLlhnGHQjyYp69l7uAwuyFr7ErzaaVWaB9qaLx8Y3qQndbaV7t1FvLO8mebp2XFUjpSoVesCZfBZ8FFp50DouFqZg0jYjJWRQBxFZxJTuxoUDGq6sN7YUupJCPqzrSBRejrD-B0NYu_T4PDT4m-zRLgluBSLWy9QIHvyNHzhnrgJSBj-Ndf4yShvfFbL3CGG3Ep19ghGpx96d8pyPISASnFT4G9Wc"/>
+<p class="font-title-md text-[13px] text-on-surface truncate">Paneer Lababdar</p>
+<p class="font-label-sm text-label-sm text-secondary">₹340</p>
+</div>
+<div class="min-w-[130px] p-2 bg-surface-container-lowest rounded-lg shadow-sm">
+<img class="w-full h-16 rounded object-cover mb-1.5" data-alt="Crispy sizzling tandoori stuffed mushrooms resting on a bed of fresh greens and mint chutney swirl, fine dining restaurant presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAptK7e04LXNAREJXSa8Zfm2-LXNF5ZV_dt0hmDFQyTfpkot56tK29wDaFzt0vJjWj4rohElqRhK8Qb8LkXYo20x12HOO18zIn53PG-U3jN3PYSlwZvgEezBtmpiJYcPwfqYoiOTui8SkegWE4o5JH2r6ToNN4_F4pM5gD0N-gGjF7OCunjbD0HiftX4rRFkEa1EXY935K_NWcrVfZsrCYEwVuJqk91Ru9vDl76y5c"/>
+<p class="font-title-md text-[13px] text-on-surface truncate">Tandoori Bharwan Mushroom</p>
+<p class="font-label-sm text-label-sm text-secondary">₹290</p>
+</div>
+<div class="min-w-[130px] p-2 bg-surface-container-lowest rounded-lg shadow-sm">
+<img class="w-full h-16 rounded object-cover mb-1.5" data-alt="Golden aromatic dal makhani slow cooked over charcoal garnished with cream and dollop of white butter, rich Indian wedding banquet styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAch4elh0PL1U_CaEdCCP6o8jX1_VFbQgBLrvZE4HmgwMPlilmCLhJoVT9HdZyaDb8kvLla9_WhoFph6_ORGCwl4EVhU1wfej_lf0bikjBIDSo59cKwxX9eRCVHhN2-WIMARpTGJRaI2WSl0lzqWtAebBjRAyxVae0184_4oBq5ZsI96swZHIsKjf_dD4aUeRfVmyvgRNOEoIdqpiTHZvDrT1AxoeAoXM8-yFC9A8w"/>
+<p class="font-title-md text-[13px] text-on-surface truncate">Dal Abhinandan Special</p>
+<p class="font-label-sm text-label-sm text-secondary">₹280</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Active Bookings & Banquet Inquiries -->
+<section class="px-gutter-mobile mt-space-md" id="bookings-section">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">event_available</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Your Reservations</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Live &amp; Upcoming</span>
+</div>
+<!-- Confirmed Booking Card (Heroic Tactile Luxury) -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md mb-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+            CONFIRMED
+          </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Ref #AG-2891</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Table for 4</span>
+</div>
+<div class="mt-2 flex gap-3">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="Charming evening view of the illuminated open garden lawn at Abhinandan Restaurant with fairy lights on trees and candle-lit wooden gazebo tables set for family dinner." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4cPcgYg9QQwpjTGE3hBoS6iZZOH9PX7RIfAKu8pO3zP_RdLvOnif7EqQYVMslYsZR6KORu-LKl3ojszO-hrykHp5wHJZeZ0ex_CXBxEYUsK9vg0cCKfm0s3G2I5m05hrEfU3crDRcf6cGG5rKYRtzHTwCB6zLXjLSAE-mXQ__5Qc_BmNLwZ9zK94wVqlWNoRdJlm50fOYhnMBK3MP9jCav-0ggweo_VyJkRlpE4Q"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="font-title-lg text-title-lg text-primary truncate">Upcoming Family Dinner</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[15px] text-secondary">yard</span>
+            Outdoor Garden Lawn (Gazebo 3)
+          </p>
+<div class="flex items-center gap-2 mt-1.5 font-label-md text-label-md text-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary">calendar_today</span>
+<span>Friday, 15 Nov • 8:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Action Row on Booking Card -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-3 gap-2">
+<button class="py-2 px-1 text-center rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-primary transition-colors" onclick="showModal('booking-details-modal')">
+          View Details
+        </button>
+<button class="py-2 px-1 text-center rounded-lg bg-surface-container hover:bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant transition-colors" onclick="alert('Our banquet manager will assist you with schedule changes. Opening WhatsApp concierge...'); window.open('https://wa.me/919522266688?text=Hello%20Abhinandan%20Desk,%20I%20wish%20to%20modify%20booking%20AG-2891');">
+          Modify
+        </button>
+<a class="py-2 px-1 text-center rounded-lg bg-secondary text-on-secondary font-label-sm text-label-sm flex items-center justify-center gap-1 shadow-sm hover:bg-primary transition-colors" href="https://wa.me/919522266688?text=Hello%20Captain,%20I%20am%20arriving%20for%20Booking%20AG-2891%20at%208:00%20PM." target="_blank">
+<span class="material-symbols-outlined text-[14px]">chat</span>
+          Chat Captain
+        </a>
+</div>
+</div>
+<!-- Active Inquiry Card: Banquet -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+          Quotation Ready
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lawn Inquiry #INQ-812</span>
+</div>
+<div class="mt-1 flex items-start justify-between">
+<div>
+<h3 class="font-title-lg text-title-lg text-primary">Birthday Party Lawn Enquiry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Estimated 50 Guests • High Tea &amp; Dinner Buffet</p>
+<p class="font-label-sm text-label-sm text-secondary mt-1 font-semibold">Custom Menu &amp; Stage Lighting Included</p>
+</div>
+</div>
+<div class="mt-3 flex items-center gap-2">
+<a class="flex-1 py-2 px-3 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center font-medium shadow-sm hover:bg-primary-container transition-colors" href="https://wa.me/919522266688?text=Hello,%20I%20received%20the%20quotation%20for%20Banquet%20Inquiry%20INQ-812%20and%20would%20like%20to%20confirm." target="_blank">
+          Review &amp; Confirm Quotation
+        </a>
+<button class="py-2 px-3 rounded-lg bg-surface-container font-label-sm text-label-sm text-primary hover:bg-surface-container-high transition-colors" onclick="alert('Quotation PDF sent to your registered WhatsApp number (+91 98930 XXXXX).')">
+          PDF Quote
+        </button>
+</div>
+</div>
+</section>
+<!-- Live Hospitality Concierge & Desk Manager Card -->
+<section class="px-gutter-mobile mt-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-md">
+<!-- Concierge Header -->
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<div class="relative">
+<div class="w-11 h-11 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-inner">
+<span class="material-symbols-outlined text-[24px]">room_service</span>
+</div>
+<span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-secondary ring-2 ring-surface-container-lowest"></span>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h3 class="font-title-lg text-title-lg text-primary">Hospitality Concierge</h3>
+</div>
+<p class="font-label-sm text-label-sm text-secondary font-medium">Abhinandan Desk • Replies within 5 mins</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">mark_chat_unread</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2">
+        Need table decor, customized spices, or instant lawn availability? Tap below to converse directly with our team.
+      </p>
+<!-- Quick Message Chips -->
+<div class="mt-3 flex flex-wrap gap-1.5" id="preset-chips">
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-sm text-label-sm text-on-surface text-left flex items-center gap-1 shadow-sm" onclick="sendQuickMessage('Check table availability for tonight at 8:00 PM for 4 guests')">
+<span>Check table for tonight 8 PM</span>
+<span class="material-symbols-outlined text-[13px] opacity-60">arrow_outward</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-sm text-label-sm text-on-surface text-left flex items-center gap-1 shadow-sm" onclick="sendQuickMessage('Please share options and arrangements for a customized Jain menu')">
+<span>Request customized Jain menu</span>
+<span class="material-symbols-outlined text-[13px] opacity-60">arrow_outward</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-sm text-label-sm text-on-surface text-left flex items-center gap-1 shadow-sm" onclick="sendQuickMessage('Could you share birthday decoration packages and lawn rates?')">
+<span>Birthday decor package &amp; rates</span>
+<span class="material-symbols-outlined text-[13px] opacity-60">arrow_outward</span>
+</button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container hover:bg-secondary-container hover:text-on-secondary-container transition-colors font-label-sm text-label-sm text-on-surface text-left flex items-center gap-1 shadow-sm" onclick="sendQuickMessage('Please provide banquet quotation details for 100+ guests gathering')">
+<span>Banquet quote for 100+ guests</span>
+<span class="material-symbols-outlined text-[13px] opacity-60">arrow_outward</span>
+</button>
+</div>
+<!-- Action CTA Buttons -->
+<div class="mt-space-sm pt-space-xs grid grid-cols-2 gap-2">
+<a class="py-2.5 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm hover:bg-primary-container transition-colors" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Desk,%20I%20am%20reaching%20out%20via%20the%20app%20concierge." target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+          WhatsApp Chat
+        </a>
+<a class="py-2.5 px-3 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 transition-colors" href="tel:+919522266688">
+<span class="material-symbols-outlined text-[18px]">phone_in_talk</span>
+          Call Banquet Desk
+        </a>
+</div>
+</div>
+</section>
+<!-- Dining & Dietary Preferences -->
+<section class="px-gutter-mobile mt-space-md">
+<div class="flex items-center gap-1.5 mb-space-xs">
+<span class="material-symbols-outlined text-secondary text-[22px]">tune</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Dining Preferences</h2>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm space-y-space-sm">
+<!-- Diet Type -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">eco</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Pure Vegetarian Selection</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prioritize garden fresh non-onion &amp; garlic items</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">Active</span>
+</div>
+<!-- Jain Friendly Switch -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Jain Friendly Menu Flag</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Notify kitchen captains automatically</p>
+</div>
+</div>
+<button aria-pressed="true" class="w-11 h-6 rounded-full bg-secondary p-0.5 flex items-center justify-end transition-colors shadow-inner" id="jain-toggle-btn" onclick="toggleDietPreference(this)">
+<span class="w-5 h-5 rounded-full bg-on-secondary shadow-sm"></span>
+</button>
+</div>
+<!-- Favorite Seating Area -->
+<div class="pt-1">
+<label class="font-label-md text-label-md text-on-surface-variant block mb-1.5 uppercase tracking-wide">Preferred Seating Atmosphere</label>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 px-2 rounded-lg bg-primary text-on-primary font-label-sm text-label-sm text-center shadow-sm">
+            Garden Gazebo
+          </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm text-center transition-colors">
+            Open Lawn
+          </button>
+<button class="py-2 px-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm text-center transition-colors">
+            AC Family Hall
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Saved Addresses in Seoni -->
+<section class="px-gutter-mobile mt-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[22px]">home_pin</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Saved Addresses</h2>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline" onclick="prompt('Enter new address in Seoni (e.g., Near Bus Stand, Civil Lines):')">
+        + Add Address
+      </button>
+</div>
+<div class="space-y-2">
+<!-- Address 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm flex items-start justify-between">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">home</span>
+<div>
+<div class="flex items-center gap-2">
+<p class="font-title-md text-title-md text-on-surface">Home • Barapathar</p>
+<span class="px-2 py-0.2 rounded bg-surface-container font-label-sm text-[10px] text-on-surface-variant">Default</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Ward No. 14, Near Gayatri Mandir, Barapathar, Seoni (M.P.) 480661</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary p-1">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+<!-- Address 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-lowest shadow-sm flex items-start justify-between">
+<div class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">apartment</span>
+<div>
+<p class="font-title-md text-title-md text-on-surface">Office • Civil Lines</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Commercial Complex, Near Collectorate Road, Seoni (M.P.)</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary p-1">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Location Map & Operating Hours Section -->
+<section class="px-gutter-mobile mt-space-md">
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm">
+<div class="flex items-center justify-between pb-2 mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[22px]">restaurant</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Abhinandan Garden</h3>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">Open Daily</span>
+</div>
+<div class="space-y-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">schedule</span>
+<span><strong>11:00 AM – 11:00 PM</strong> (Kitchen closes at 10:45 PM)</span>
+</div>
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">location_on</span>
+<span>Barapathar, Seoni, Madhya Pradesh 480661 • Direct Parking for 50+ Vehicles</span>
+</div>
+</div>
+<!-- Map Display Container -->
+<div class="mt-3 relative rounded-lg overflow-hidden h-36 bg-surface-container-high shadow-inner">
+<div class="w-full h-full bg-cover bg-center" data-location="Abhinandan Garden Restaurant, Barapathar, Seoni, Madhya Pradesh 480661" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDSLfLD7TfNsh3V4T-pYPmoXcVMMx225LkWEjMw4PmHMif44jBl5o4AEEM0uXHs0b1Ty9xZUDXB4FHi1NJkN8MpGksWcw5Dj7AwaM27FwtNM2oyzLMfyrMeu0-uSrkuPBnz-qsWYgB_50zIe7bE14TktMFb1q6ziorVrMlYBB_zDaaFlB1xFQbvS08YgNZ5cvUIEC_Y9Ov5lr8Ym6zgGK_p7AqrY6KqUY261iK9yuQ')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[0.5px] flex items-center justify-center">
+<a class="px-3.5 py-1.5 rounded-full bg-surface-container-lowest text-primary font-label-md text-label-md font-semibold shadow-md flex items-center gap-1.5 hover:bg-secondary-container hover:text-on-secondary-container transition-all" href="https://maps.google.com/?q=Abhinandan+Garden+Restaurant+Seoni" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-secondary">directions</span>
+              Open in Google Maps
+            </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Notification & App Settings -->
+<section class="px-gutter-mobile mt-space-md">
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm divide-y divide-surface-container">
+<h3 class="font-title-lg text-title-lg text-primary pb-2">Preferences &amp; Notifications</h3>
+<div class="flex items-center justify-between py-3">
+<div>
+<p class="font-title-md text-title-md text-on-surface">Exclusive Table Offers</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Get notified for festival menus &amp; garden live events</p>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary cursor-pointer" type="checkbox"/>
+</div>
+<div class="flex items-center justify-between py-3">
+<div>
+<p class="font-title-md text-title-md text-on-surface">WhatsApp Booking Alerts</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Direct confirmation &amp; table token messages</p>
+</div>
+<input checked="" class="w-5 h-5 accent-secondary cursor-pointer" type="checkbox"/>
+</div>
+<div class="pt-3 flex items-center justify-between">
+<button class="font-label-md text-label-md text-error flex items-center gap-1 hover:underline" onclick="confirm('Log out from Abhinandan Dining Club?')">
+<span class="material-symbols-outlined text-[18px]">logout</span>
+          Log Out
+        </button>
+<span class="font-label-sm text-label-sm text-on-surface-variant">App Version 2.4 • Seoni Garden</span>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Booking Details (Triggered via View Details) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-primary/60 backdrop-blur-sm" id="booking-details-modal">
+<div class="w-full max-w-sm rounded-xl bg-surface-container-lowest p-space-md shadow-2xl relative">
+<div class="flex items-center justify-between pb-2 border-b border-surface-container">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Booking #AG-2891</h3>
+<p class="font-label-sm text-label-sm text-secondary">Confirmed Table Reservation</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="hideModal('booking-details-modal')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="mt-3 space-y-2 font-body-sm text-body-sm text-on-surface">
+<div class="flex justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="text-on-surface-variant">Occasion</span>
+<span class="font-semibold text-primary">Family Dinner</span>
+</div>
+<div class="flex justify-between py-1 px-2">
+<span class="text-on-surface-variant">Guest Count</span>
+<span class="font-semibold text-primary">4 Adults</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="text-on-surface-variant">Date &amp; Time</span>
+<span class="font-semibold text-primary">Fri, 15 Nov • 8:00 PM</span>
+</div>
+<div class="flex justify-between py-1 px-2">
+<span class="text-on-surface-variant">Assigned Captain</span>
+<span class="font-semibold text-primary">Captain Jagdish</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-low px-2 rounded">
+<span class="text-on-surface-variant">Seating Zone</span>
+<span class="font-semibold text-primary">Outdoor Gazebo Table 3</span>
+</div>
+</div>
+<div class="mt-4 pt-2">
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-semibold text-center hover:bg-primary-container transition-colors" onclick="hideModal('booking-details-modal')">
+          Done
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleSection(elementId) {
+    const el = document.getElementById(elementId);
+    if (el) {
+      el.classList.toggle('hidden');
+    }
+  }
+
+  function showModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.remove('hidden');
+  }
+
+  function hideModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) modal.classList.add('hidden');
+  }
+
+  function toggleDietPreference(btn) {
+    const isChecked = btn.getAttribute('aria-pressed') === 'true';
+    if (isChecked) {
+      btn.setAttribute('aria-pressed', 'false');
+      btn.classList.remove('bg-secondary', 'justify-end');
+      btn.classList.add('bg-surface-container-high', 'justify-start');
+    } else {
+      btn.setAttribute('aria-pressed', 'true');
+      btn.classList.add('bg-secondary', 'justify-end');
+      btn.classList.remove('bg-surface-container-high', 'justify-start');
+    }
+  }
+
+  function sendQuickMessage(presetText) {
+    const phone = "919522266688";
+    const encoded = encodeURIComponent("Hello Abhinandan Concierge! " + presetText + " - Ramesh Sharma (#AG-2891)");
+    window.open("https://wa.me/" + phone + "?text=" + encoded, "_blank");
+  }
+</script></main><a aria-label="WhatsApp Enquiry" class="fixed bottom-24 right-4 z-40 w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_8px_20px_rgba(48,32,25,0.18)] flex items-center justify-center transition-transform active:scale-95" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20would%20like%20to%20make%20an%20enquiry"><span class="material-symbols-outlined text-[24px]">chat</span></a><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(48,32,25,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-1"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="abhinandan-garden-home" href="#"><span class="material-symbols-outlined text-[22px]">yard</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="dining-menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebrations-events" href="#"><span class="material-symbols-outlined text-[22px]">celebration</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Events</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="photo-gallery" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Gallery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile-concierge" href="#"><span class="material-symbols-outlined text-[22px]">room_service</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Concierge</span></a></div></nav></body></html>

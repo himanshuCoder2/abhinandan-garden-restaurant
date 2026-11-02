@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "primary": "#180b06", "on-primary": "#ffffff", "primary-container": "#302019", "surface-container-lowest": "#ffffff", "outline": "#817470", "on-secondary": "#ffffff", "on-error": "#ffffff", "secondary": "#755a2a", "outline-variant": "#d2c3be", "surface-dim": "#dedad0", "secondary-container": "#fcd89c", "on-tertiary-fixed-variant": "#733517", "primary-fixed": "#faddd1", "inverse-surface": "#32302a", "on-secondary-fixed": "#271900", "on-tertiary-fixed": "#360f00", "on-secondary-container": "#775d2d", "on-surface-variant": "#4f4541", "inverse-on-surface": "#f5f0e6", "on-background": "#1d1c16", "on-secondary-fixed-variant": "#5b4315", "inverse-primary": "#dcc1b6", "error": "#ba1a1a", "surface-container-high": "#ede8de", "on-primary-fixed": "#271811", "surface-container-highest": "#e7e2d8", "primary-fixed-dim": "#dcc1b6", "surface-container": "#f2ede3", "on-primary-container": "#9e867c", "on-primary-fixed-variant": "#56423a", "tertiary": "#200600", "secondary-fixed-dim": "#e5c188", "on-tertiary-container": "#c57753", "surface-container-low": "#f8f3e9", "tertiary-fixed-dim": "#ffb596", "surface": "#fef9ef", "on-tertiary": "#ffffff", "on-surface": "#1d1c16", "tertiary-fixed": "#ffdbcd", "error-container": "#ffdad6", "on-error-container": "#93000a", "background": "#fef9ef", "tertiary-container": "#431500", "surface-bright": "#fef9ef", "secondary-fixed": "#ffdea9", "surface-variant": "#e7e2d8", "surface-tint": "#6f5a51" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "space-md": "1.25rem", "margin": "3rem", "space-xl": "3.5rem", "space-xs": "0.375rem", "space-lg": "2rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "gutter-mobile": "1rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-md": ["Playfair Display"], "headline-xl-mobile": ["Playfair Display"], "title-md": ["Plus Jakarta Sans"], "title-lg": ["Playfair Display"], "headline-lg-mobile": ["Playfair Display"], "label-sm": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-xl": ["Playfair Display"], "headline-sm": ["Playfair Display"], "label-lg": ["Plus Jakarta Sans"] }, "fontSize": { "headline-md": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "headline-xl-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "title-lg": ["20px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }], "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "600" }], "headline-xl": ["56px", { "lineHeight": "68px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.04em", "fontWeight": "600" }] } } } }</script><style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface antialiased flex flex-col min-h-full"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-xs min-w-0"><img alt="Abhinandan Garden Restaurant Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1bEY5rFwf006mDLCUB_agzY2F8ujTWef6whnsNPnhOrIEXGURgLyki7uLN6jQNNskD93YtTTanyegUk3Kqu9ziA_PxOon64SvPT6psqcLEIj71e2SHwwsYaxLgoTA6H5syWsRJ0qsfEFNJV9_8Gx50OZRs5a8msBXaCV-l58YSL-Slt5HXySDVDEkrACE_nSkVDLd3t6g5MQpBQBIOzfvb9Z0BMydQjOVwwW-Ry8"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-1"><span class="font-title-lg text-title-lg text-primary tracking-tight truncate">Abhinandan</span><span class="hidden sm:inline font-body-sm text-body-sm text-secondary italic">Garden</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest truncate">Menu</span></div></div><div class="flex items-center gap-1 sm:gap-space-xs flex-shrink-0"><a aria-label="Call Restaurant" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-secondary-container transition-colors" href="tel:+919522266688"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Menu Drawer" class="w-11 h-11 rounded-full flex items-center justify-center text-primary-container bg-surface-container hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[22px]">menu</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 ml-0.5"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full">
+<!-- Menu Header & Purity Badge -->
+<section class="px-margin-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="inline-flex items-center gap-1.5 self-start px-space-xs py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">100% Pure Vegetarian • Farm Fresh</span>
+</div>
+<div class="flex items-baseline justify-between">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Culinary Heritage Menu</h1>
+<span class="font-label-md text-label-md text-secondary font-medium">Barapathar, Seoni</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+      Savor garden-fresh ingredients, royal clay oven breads, slow-cooked royal gravies, and aromatic sizzlers in our open-air starlit dining haven.
+    </p>
+</section>
+<!-- Sticky Search & Filter Toolbar -->
+<div class="sticky top-16 z-30 bg-surface/95 backdrop-blur-md px-margin-mobile py-2 flex flex-col gap-2.5 shadow-[0_4px_16px_rgba(48,32,25,0.04)]">
+<!-- Search Bar -->
+<div class="relative w-full flex items-center">
+<span class="material-symbols-outlined absolute left-3.5 text-on-surface-variant text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-container text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-container-lowest transition-colors" id="menuSearchInput" placeholder="Search 120+ pure veg delicacies, sizzlers, gravies..." type="text"/>
+<button aria-label="Clear Search" class="hidden absolute right-3 text-outline hover:text-primary" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+<!-- Dietary Filter Chips -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin-mobile px-margin-mobile scrollbar-none" id="dietaryFilters">
+<button class="dietary-filter active flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-primary text-on-primary shadow-sm" data-filter="all">
+        All Items
+      </button>
+<button class="dietary-filter flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="chefs-special">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">star</span>
+          Chef's Specials
+        </span>
+</button>
+<button class="dietary-filter flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="jain">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          Jain Friendly
+        </span>
+</button>
+<button class="dietary-filter flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="kids">
+        Kids Friendly
+      </button>
+<button class="dietary-filter flex-shrink-0 px-3.5 py-1.5 rounded-full font-label-md text-label-md transition-all bg-surface-container text-on-surface-variant hover:bg-surface-container-high" data-filter="spicy">
+        Spicy &amp; Tangy
+      </button>
+</div>
+<!-- Sticky Horizontal Category Navigation -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin-mobile px-margin-mobile border-t border-outline-variant/30 pt-2" id="categoryNav">
+<a class="cat-nav-link active flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider bg-secondary-container text-on-secondary-container transition-colors" href="#starters">Starters</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#sizzlers">Sizzlers</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#paneer">Paneer</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#main-curries">Curries &amp; Dal</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#biryani-rice">Biryani</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#tandoori-breads">Breads</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#indo-chinese">Indo-Chinese</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#beverages">Beverages</a>
+<a class="cat-nav-link flex-shrink-0 px-3 py-1 rounded-lg font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant hover:bg-surface-container transition-colors" href="#desserts">Desserts</a>
+</div>
+</div>
+<!-- Garden Notice Banner -->
+<div class="mx-margin-mobile mt-space-sm p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between gap-space-xs shadow-sm">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[20px] text-secondary flex-shrink-0">spa</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate">Custom Jain preparation (no onion/garlic) readily cooked upon request.</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-bold flex-shrink-0">Ask Captain</span>
+</div>
+<!-- MENU SECTIONS CONTAINER -->
+<div class="flex flex-col gap-space-lg px-margin-mobile py-space-md" id="menuContent">
+<!-- 1. Starters & Chaat Section -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="starters">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Appetizers &amp; Tandoori</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Chef's Signature Starters</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">4 Delicacies</span>
+</div>
+<!-- Dish 1 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="starters" data-tags="chefs-special jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Chef Special</span>
+<span class="px-1.5 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Jain Avail</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Paneer Malai Tikka</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Melt-in-mouth cottage cheese marinated in cream, cashews, cardamom, char-grilled over clay embers.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹260</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Paneer Malai Tikka" data-price="260">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Succulent char-grilled paneer malai tikka cubes with mint chutney and lemon wedges, golden roasted edges on rustic plate in restaurant setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAm0NyvFP92qJfmmmF0U6STx905wNItBK82p2KdOc_vYVjUaWP1v2uEU-o0d_doivOFKPeVn5_rYnElad3LMDN0KIWqjd-ovDNyypWlKBDeriuItgaiecairFsmujv4TMnhPO-7IrpK7NspAIdSit6b6fcnW4cjFIxUQdaAz8iJ7pPhfMzJGa0T5dpa7Fw1ne0v3TPSn47cWEP2UHPFARjCBLwL0HWiuvNwyPhT5rI"/>
+</div>
+</article>
+<!-- Dish 2 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="starters" data-tags="chefs-special">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">House Must</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Dahi Ke Kebab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Hung curd infused with roasted cumin, green chillies &amp; fresh coriander, cloaked in crispy golden crust.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹230</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Dahi Ke Kebab" data-price="230">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden crisp dahi ke kebab with soft yogurt filling, served with beet microgreens and spiced raw mango chutney on stoneware" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbyj76tfuYHf6oKIwSWAhHpa6BiF5WMA6NoFAOJ_wHdl2k6t4dbYdax6iqnFq8BXZFyIX7F9bQjeJ4zrruV2CCNx7SCxs4hPI6mSQH3fFncUMP1gvXRKjvULXrje7AdhafhTRaZ_OCkNsdl7GsUWfGike-GAMYVX6KqSYzZktsLtv0A8SlZTkiw29oHhNkNpVU4H8KeBNN875L0LTXp0l03xOk2IVppeNRabs6P8E"/>
+</div>
+</article>
+<!-- Dish 3 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="starters" data-tags="kids spicy">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Crunchy Favorite</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Crispy Corn Pepper Salt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Sweet tender corn flash-fried and tossed with scallions, crushed black pepper, and fragrant celery.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹210</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Crispy Corn Pepper Salt" data-price="210">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant golden crispy sweet corn kernels tossed with diced bell peppers, scallions, and crushed black peppercorns in ceramic bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBykdjlg-Jy9AeV1PzDH9ix6DtWO44645TvEbyxXEqK_fSgKnXOA3VRajIiZsjDRSE6I9Vdryp3cukODgYKEPU-oTYk6t7KARckBRsqp7EHE9i4gQOsx5sl6xYNAPTgGJcd9AEusjikjGI7BBXoM9tu5H5XTihcHBE_swEQGl15Bm_FFwmHarG6zk2luOYi3vZhz12fuL82uygaNN8pSVyEkG3JOhFmRtqQ1cPUiyk"/>
+</div>
+</article>
+<!-- Dish 4 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="starters" data-tags="jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Classic</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Hara Bhara Kebab</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Minced garden spinach, green peas, and steamed potatoes stuffed with lightly spiced cashew nuts.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹200</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Hara Bhara Kebab" data-price="200">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Deep green hara bhara kebabs topped with whole golden fried cashew nut on traditional Indian bronze plate" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBjf0ZCB_oFfVLrX0Q3ElBARcZrdRL15GFO8C_h1uWA0VOrLX9gEJOA4-VU3YmDz3FVaKe_RaDrI0tm8pC-7t6AlNSnFeRxbxj-AWZ6rzXwRe7l6yXLGVW-ypDkemhDGEt_sOz3G2CPFXpoNBBFiof16H0EQM2CAX9b4D-BfZkJU8QWvH6LGgEjAvyySgexV1oM8ZU0qv89U6jcRPBjEQO5JU995hlzWnWLf2GSf0"/>
+</div>
+</article>
+</section>
+<!-- 2. Sizzlers & Garden Showstoppers -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="sizzlers">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Cast Iron Specials</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Sizzlers &amp; Garden Showstoppers</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">3 Varieties</span>
+</div>
+<!-- Sizzler 1 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="sizzlers" data-tags="chefs-special">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Signature</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Abhinandan Special Veg Sizzler</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Handcrafted vegetable cutlets, buttered herb rice, grilled tomato, French fries, steamed veggies with house barbecue glaze.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹340</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Abhinandan Special Veg Sizzler" data-price="340">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Piping hot smoking cast iron sizzler platter loaded with herb rice, potato wedges, fresh grilled vegetables, cutlets, and savory glaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZZ0cEcPiSNIksJiDZBPifTTw3RACpcDls66wiGGs3MPv53VU_-lorndu8COos9DRiUdyOyC-8EgD5tDvUQwU2Q3xlRx5_1ZhY3BgapUsQ3REYmH2e7iYSrIT_hQ8uB0YrprhKFvdSWhvMrHtWBuJJfZ5309cLxx7BDrTtpcef0mSM6YJbXoPDWnzBZ_klra5EAS0AC0AFz5hNmkBcufolpJlgDxHN4ctJLbVJWew"/>
+</div>
+</article>
+<!-- Sizzler 2 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="sizzlers" data-tags="spicy">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Smoky Paneer</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Paneer Shashlik Sizzler</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Charred cottage cheese skewers with bell peppers on a bed of buttered jeera noodles, French fries &amp; garlic reduction.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹360</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Paneer Shashlik Sizzler" data-price="360">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Smoking hot paneer shashlik skewers with charred bell peppers on bed of noodles and sizzling fries on wooden sizzler base" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsdCys6WVMOKRIbXjFov0jrlL9YgLCxFbrxGKRDkOR17bf6gLuS0exeb5WytsiG58tfNv6Dun4_9eBHEarkUK_MDsTz8GY-8KsZdEEpxYLkroaSnz_pxClX6qTrk9cAmJFa1yIAhZanWeBkXGj_lvDMtEZd6-pkQvQRanfIdbxWQqxl8B4pzBrJgkRJ7BQjSqbs3BgR8vyK5yQ8XFPafDK4pzXYNEkXCvYVGCERps"/>
+</div>
+</article>
+<!-- Sizzler 3 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="sizzlers" data-tags="spicy">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Fusion Special</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Chinese Fusion Sizzler</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Wok-tossed Hakka noodles, aromatic fried rice, crispy vegetable balls in rich Manchurian gravy, served steaming hot.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹330</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Chinese Fusion Sizzler" data-price="330">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Chinese fusion sizzler with vegetable Manchurian balls, steaming Hakka noodles and fried rice sizzling with aromatic sauce" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuulzBJ4VcE97QV3oEMa5kZAvR7kDH-Awb7pOurj8YRQCX7I3IVGWNg0wAfL9gy-Ob8u8K4z443cvT6otu0pQYwKNVC0ZSrpv9la65mQiHPZJWi-bjq-Hq_MH-wsMj3Zk9Ohx_MWcUWfDrD-hfKS3W3qPE-LE12Zl-F2rFEk4ENAQbfBGVFVHoXmz7n5TwvRrb5CHN-sElVpQ_xxvSeKTRPnqIWTftKWlPXk0putU"/>
+</div>
+</article>
+</section>
+<!-- 3. Paneer Ka Khazana -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="paneer">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Pride of Abhinandan</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Paneer Ka Khazana</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">4 Delicacies</span>
+</div>
+<!-- Paneer 1 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="paneer" data-tags="chefs-special jain kids">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-bold">Best Seller</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Paneer Butter Masala</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Velvety tomato cashew gravy with hand-churned dairy butter, kasuri methi, and soft milk paneer chunks.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹260</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Paneer Butter Masala" data-price="260">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Rich velvety red-orange paneer butter masala curry topped with fresh cream swirl and butter dollop in copper handi bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO4KIC-xeA5M1ZDKdwBxEO6A4pZvUd7jXLeFqOBoqnvkJSilE3IL6fDvOyD8eQ6_D63Bu5eq_x0hLlBOkT-CAj3YxKUgOxreSBs48GSuzgzhZTsx48BD-1KoEzEYwNj9pxwSb4HPcJ-jwZSjH3W9n7OYWG7s6x0yeU5HCnQx8pIBkt_caOEu1_hZyK7DL2fDMb9m33TxOjOLviWtR70JXDDJBCz1JvuuSkhbBzcgw"/>
+</div>
+</article>
+<!-- Paneer 2 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="paneer" data-tags="spicy">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Spicy Wok</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Kadhai Paneer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Wok-tossed paneer cubes with pounded coriander seeds, crunchy capsicum, and coarse tomato onion gravy.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹270</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Kadhai Paneer" data-price="270">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Kadhai paneer curry with vibrant green and red capsicum pieces, whole red chilies, fresh coriander in cast iron wok" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQRCiH6B1MsV6ntRtLt2FaZvYvlHu9MNu6yuYBvsAjjDRdT3poh5U2oxgSADP0iQQ0xK8K5zvlWGTzl7bMfVuMTUySrTS2qbhhPlrzl-aZiO5JQGqTSLkF-cb40lBCQrIbkUKrBHsq4hUMHnFKLOu4DrR-R4qSQ-F4izUdEEYAI8qFd0qdMGMMUlnNex6I-kvJVJ3fpRN7K1WEfT6DtXyzBl47XgW-6cc38If7heE"/>
+</div>
+</article>
+<!-- Paneer 3 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="paneer" data-tags="chefs-special jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Chef Recommend</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Paneer Lababdar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Rich onion-tomato reduction cooked with grated cottage cheese, fragrant spices, and luscious heavy cream.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹280</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Paneer Lababdar" data-price="280">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Paneer lababdar with grated cheese and rich tomato cashew gravy served in elegant ceramic bowl with ginger juliennes" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDR6sXXavAorrTDx7YDHlUuHsThRKZfCr0JtIcIyVREJySyKLk1XqL0ZRJTRoZbbpQBMeYLiw_QY18zFKRdswVS7vAnaGxEj6ymtqjpGMmZZHUVmaF2Gncy9B4ew-HRFhNhx5VSWGofnwEkpHfZv4uu5YdtOqAiTFW7VT3IeCJOmRGd6QoKgMGIQYMJGvJU3p09tHhbRWA9QkJyGtRoJLesz2TsoRFEFOOFMjl8M50"/>
+</div>
+</article>
+<!-- Paneer 4 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="paneer" data-tags="chefs-special jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Royal Heritage</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Paneer Pasanda</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Stuffed paneer sandwiches stuffed with mawa &amp; nuts, simmered in royal creamy almond and saffron gravy.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹290</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Paneer Pasanda" data-price="290">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Royal paneer pasanda stuffed triangles in rich aromatic creamy almond and saffron sauce garnished with pistachios" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Uyf0kNXbE3mGIoOaydQiGcE7z1icsszui-0crXo2vrhf44Q-Z9b1ixryP0G9pBCRJNF1QQLfsGZ7GFcbj5oLhKFADhGueiEx-E7cEylSDfkvz3p9qnwzirgsuZ1UYcm1XYFa0BE5Mk4dH7Hvfd90W_UnTJnd8RvEa03a2LTwwtbHjg7xEJCrzyQKG-K4qJuZeqz3-bzz9kqQu1E4p9fzX3WbK2NWLnOPbVnhs-U"/>
+</div>
+</article>
+</section>
+<!-- 4. North Indian Curries & Dals -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="main-curries">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Traditional Handi Recipes</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">North Indian Curries &amp; Dal</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">5 Varieties</span>
+</div>
+<!-- Curry 1: Dal Makhani -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="main-curries" data-tags="chefs-special jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Overnight Slow Cook</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Dal Makhani Royal</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Black urad lentils slow-simmered overnight over charcoal embers with fresh country butter and double cream.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹220</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Dal Makhani Royal" data-price="220">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Slow cooked creamy black dal makhani served in traditional black pottery handi with white butter swirl and fresh coriander" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4GTEw0Nd23cxlogSOGi6Mtn9Yh1CkbSz3Oc_2LFlVu4fN1D9uJmH4MJJ0ZAcA7VilMPBe7ZQl9qy4D-rTBWK8J4IwQOt5lHC4IQd8BBz7mA1iCdyThDN__o9Xq0qG19kWUW5QGs0ShrXLxtRL-D9nXKc2-oedGBjZaauA5catGAvyBblYaUcxI-yJoPQUSA24ois6goJ8ofHzVonUsvRrBEDUoTzlkqis9iF6L8E"/>
+</div>
+</article>
+<!-- Curry 2: Dal Tadka -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="main-curries" data-tags="spicy jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Desi Ghee Chaunk</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Dal Tadka Double Chaunk</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Yellow arhar dal tempered twice with pure desi ghee, cumin, roasted garlic, and fiery Kashmiri whole chillies.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹180</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Dal Tadka Double Chaunk" data-price="180">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Yellow dal tadka topped with sizzling red chili and cumin desi ghee chaunk in rustic copper serving dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6OA0QN_PWbMEoZgQuQk0ww7uD5-rMpidQd7xVu0qt3362z55Pk_Y3d3BDHQAU2eJvU-PBYHrmGCZMB23YVpujnUI3F21STDCHL_jGXrHInP7KM3tn6pAWyFPyN25xqFuJtWmIFXiaECb6zuScMmTQcMHm44CZzS9AaKpgDyV0mO-QQuAgz0BjzxKJuX6JilOHQg_slqbd-QDPc0H-LSkWtS7EjPRvwL7CC9YBxEQ"/>
+</div>
+</article>
+<!-- Curry 3: Malai Kofta -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="main-curries" data-tags="chefs-special kids jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm font-semibold">Mild &amp; Royal</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Malai Kofta White Gravy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Soft khoya and paneer dumplings bathed in silky cashew-nut, melon seed and green cardamom ivory gravy.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹280</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Malai Kofta White Gravy" data-price="280">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Delicate golden paneer khoya kofta dumplings submerged in creamy white cashew shahi gravy decorated with silver leaf and rose petals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALo4KxYYAqKXbB2CvJCgcWVnFyHn_mI3JuOG5cBJ1robEMQoWbSG_m_hmYLt_69SkaMpmJeK1m00UF9Pp5GtLU4H3zd-UCUxqDPOs0LQyx_91wL4W9DgiSe1InUifDEqLxVZM5TBUMrSelDrrGij3QCGfMZbP3D_adV66AIOYG8aYgvAAdF4oT4LM6RZG1F7DTQtJfthbSAU3HrgypOTmRJahfXmlNyYZeTd-AaVc"/>
+</div>
+</article>
+<!-- Curry 4: Dum Aloo Kashmiri -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="main-curries" data-tags="jain spicy">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Aromatic</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Dum Aloo Kashmiri</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Baby potatoes prick-fried and simmered in a yogurt-based fennel seed gravy with ginger &amp; mild Kashmiri chillies.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹220</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Dum Aloo Kashmiri" data-price="220">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Kashmiri dum aloo in fragrant reddish-brown yogurt fennel gravy sprinkled with dried ginger powder and fresh herbs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxiTEhqwY8NCO3zNyrQ_o612Gl-S1P2IK-D6kqfygGtZyH0QbcNBDUv4537g68AUS-0fpVpwanjspQBmzF8ZvSyoxfxjej2t6g5Ym1LH_t_-u6Xhzn8FM218iyUh3QbSe9Kn7UvnmOeFvb_mMXbjLqyKtDmdGKURuD_p5zXSPYIP7y7QxBUKAzHWN1LRJyj1Fs_d3tZy0jaKhdKRe7WN-Va5IUbJTNJLjtboLkc4o"/>
+</div>
+</article>
+<!-- Curry 5: Veg Handi -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="main-curries" data-tags="jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Garden Harvest</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Mixed Seasonal Veg Handi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Farm garden carrots, beans, peas, and florets braised in sealed earthen pot with freshly ground garam spices.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹230</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Mixed Seasonal Veg Handi" data-price="230">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Mixed garden vegetable handi curry brimming with fresh carrots, beans, and paneer cubes in fragrant brown gravy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSIS5ChQSPjrDzdvbAVYe2lPJvIc_D3AoUGdgg3iBOWlt9dEtMOGSq_tBvzYFSwsy4mgB0e5YY1jjNnuG6vQPRlnPR02diPnn0MDp2RLdzaWeOQkPq4BcpgVCl-9vGsqYgY_tzSUZFXo-LGcc-G6Rloj-4k5_uO2sBYMEhkmsIbLMqLtabn5rr55iZKh7VP0D67zTC8U_E4hSL06HnZoOTHuVOAKxImg2XOHHprig"/>
+</div>
+</article>
+</section>
+<!-- 5. Handi Dum Biryani & Pulao -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="biryani-rice">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Aged Basmati Delights</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Handi Dum Biryani &amp; Pulao</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">3 Varieties</span>
+</div>
+<!-- Biryani 1 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="biryani-rice" data-tags="chefs-special">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">Purdah Dum</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Awadhi Veg Dum Biryani</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Royal long-grain basmati aged rice layered with marinated garden vegetables, saffron &amp; whole spices; served with spiced raita.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹240</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Awadhi Veg Dum Biryani" data-price="240">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Clay pot dum biryani sealed with dough, long basmati grains, fried brown onions, mint, and saffron milk streaks with side raita" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlRtnH14ia9qcWLZXEjlhoNCwXjx9K8WWTieQRWaNoinwQra8X0SvX8VbQuauQJdGtwyc4_iobC86mUP6NXqryKzF2cH9p7L468RASK9NP-Dp4pChQwdT-zkzvHPKtQ-nGvaQa-Nfq1V0p8ncSFi8mpkqsH--_G2Z49puKWvyCY28sldXjYbogTllhuYfE_hUVQOG2dlxRRdLN-HxjHt4TSH2dC46DNqKV4o6fT6A"/>
+</div>
+</article>
+<!-- Rice 2 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="biryani-rice" data-tags="jain kids">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Classic Staple</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Jeera Rice Desi Ghee</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Aged fragrant basmati rice tossed in pure country clarified butter, roasted cumin seeds, and fresh coriander.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹140</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Jeera Rice Desi Ghee" data-price="140">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Fluffy fragrant white basmati jeera rice tossed with roasted cumin seeds and fresh chopped cilantro in porcelain dish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc5LsnyoJjLuDYYKgbh_TWINfDS6Rwew7c9Ye2Uba2LBo6zviJL3r1zBgm-27nXfIH7BXZBwchYtAxqvbb8AV37he3UXbEkyi5v-VNenuMB2EC2yeX8SCSSC6W2Y-mEViAnP5aqghZ_bzNavU95ouKz4iVwQtD2DxbTLvT7lVaeWqu1Fm8CPrAZt2RkKLpigMz8J6k433gBNw9eINvm-0h5y474HFv61oOnuk8a0g"/>
+</div>
+</article>
+<!-- Rice 3 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="biryani-rice" data-tags="kids jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Dry Fruits &amp; Fruit</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Kashmiri Pulao</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Sweet, fragrant basmati rice garnished with ruby pomegranate arils, roasted cashews, raisins, and saffron essence.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹210</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Kashmiri Pulao" data-price="210">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Colorful Kashmiri pulao rice garnished with fresh pomegranate seeds, cashew nuts, raisins, and saffron golden tint" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzGDBpT9FUD4UZKdvoYmwWcn0Oa6sHlbn43Thf9h9GlTU_4z0gbpIqvBe4fU0d1GDgJ0_OOicpkPq7LJhItReyTKhvcmTGOZFfPG4Zfg1ItY0ro_3-gQsvMGbOs_cSLo8rN48LOVdymQUUle-Iqn1r272h0m93shrErGVze0KvLsiOLei-GlQ6QXU88bgwrVguD15kuTvjHZ6bztOnp4wYVqIo5XWR7WtwfsUrFxk"/>
+</div>
+</article>
+</section>
+<!-- 6. Tandoori Breads & Naan (Grid Display) -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="tandoori-breads">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Clay Oven Specialties</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Tandoori Breads</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">7 Selections</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="jain kids">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹45</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Butter Naan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Tandoor-charred, brushed with dairy butter.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Butter Naan" data-price="45">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹65</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Garlic Naan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Infused with minced roasted garlic &amp; coriander.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Garlic Naan" data-price="65">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="chefs-special">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹95</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Cheese Garlic Naan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Molten mozzarella cheese stuffed with garlic.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm transition-colors" data-name="Cheese Garlic Naan" data-price="95">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="jain">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹55</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Laccha Paratha</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Crisp, multi-layered whole wheat flakiness.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Laccha Paratha" data-price="55">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="chefs-special">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹80</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Amritsari Kulcha</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Stuffed spiced potato and onion with pomegranate.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Amritsari Kulcha" data-price="80">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="tandoori-breads" data-tags="jain">
+<div>
+<div class="flex items-center justify-between">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<span class="font-title-md text-title-md text-primary font-bold">₹40</span>
+</div>
+<h4 class="font-title-md text-title-md text-primary mt-1 dish-name">Missi Roti</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Gram flour &amp; ajwain spiced rustic flatbread.</p>
+</div>
+<button class="add-dish-btn mt-2 w-full py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Missi Roti" data-price="40">Add +</button>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm col-span-2" data-category="tandoori-breads" data-tags="jain">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+<div>
+<h4 class="font-title-md text-title-md text-primary dish-name">Tandoori Roti (Plain / Butter)</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs">Fresh whole wheat baked in tandoor</p>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-title-md text-title-md text-primary font-bold">₹25</span>
+<button class="add-dish-btn px-4 py-1 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm transition-colors" data-name="Tandoori Roti" data-price="25">Add +</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Indo-Chinese & Sizzlers -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="indo-chinese">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Oriental Garden Wok</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Indo-Chinese Delights</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">4 Choices</span>
+</div>
+<div class="grid grid-cols-1 gap-space-xs">
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between gap-space-xs" data-category="indo-chinese" data-tags="spicy">
+<div class="flex items-start gap-2 min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32] mt-1.5 flex-shrink-0"></span>
+<div class="min-w-0">
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Chilli Paneer Gravy</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs truncate">Crisp paneer tossed with capsicum, onion &amp; spicy soy glaze.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0">
+<span class="font-title-md text-title-md text-primary font-bold">₹230</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-colors" data-name="Chilli Paneer Gravy" data-price="230">Add +</button>
+</div>
+</article>
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between gap-space-xs" data-category="indo-chinese" data-tags="spicy">
+<div class="flex items-start gap-2 min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32] mt-1.5 flex-shrink-0"></span>
+<div class="min-w-0">
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Veg Manchurian Dry</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs truncate">Golden vegetable dumplings stir-fried with ginger, garlic &amp; scallions.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0">
+<span class="font-title-md text-title-md text-primary font-bold">₹190</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-colors" data-name="Veg Manchurian Dry" data-price="190">Add +</button>
+</div>
+</article>
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between gap-space-xs" data-category="indo-chinese" data-tags="kids">
+<div class="flex items-start gap-2 min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32] mt-1.5 flex-shrink-0"></span>
+<div class="min-w-0">
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Hakka Noodles Wok-tossed</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs truncate">Thin noodles stir-fried with julienned vegetables &amp; white pepper.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0">
+<span class="font-title-md text-title-md text-primary font-bold">₹180</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-colors" data-name="Hakka Noodles" data-price="180">Add +</button>
+</div>
+</article>
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-sm flex items-center justify-between gap-space-xs" data-category="indo-chinese" data-tags="spicy">
+<div class="flex items-start gap-2 min-w-0">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32] mt-1.5 flex-shrink-0"></span>
+<div class="min-w-0">
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Schezwan Fried Rice</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs truncate">Fiery wok-tossed basmati with house-made Schezwan chili paste.</p>
+</div>
+</div>
+<div class="flex items-center gap-3 flex-shrink-0">
+<span class="font-title-md text-title-md text-primary font-bold">₹190</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md transition-colors" data-name="Schezwan Fried Rice" data-price="190">Add +</button>
+</div>
+</article>
+</div>
+</section>
+<!-- 8. Beverages & Mocktails -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="beverages">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Garden Refreshers</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Mocktails &amp; Beverages</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">6 Refreshers</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs">
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="chefs-special">
+<div>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase">Garden Hit</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Abhinandan Sunset Cooler</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Orange reduction, cranberry, passionfruit with fizz.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹170</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm" data-name="Abhinandan Sunset Cooler" data-price="170">Add +</button>
+</div>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="kids">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Refreshing</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Virgin Mojito Mint</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Garden fresh mint, muddled lemon, sparkling soda.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹130</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm" data-name="Virgin Mojito" data-price="130">Add +</button>
+</div>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Cooler</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Blue Curacao Lagoon</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Citrus blue curaçao syrup, lime juice &amp; crushed ice.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹150</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm" data-name="Blue Curacao Lagoon" data-price="150">Add +</button>
+</div>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="kids">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Creamy</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Cold Coffee with Ice Cream</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Blended espresso, chocolate syrup, vanilla scoop.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹140</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm" data-name="Cold Coffee with Ice Cream" data-price="140">Add +</button>
+</div>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="jain">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Traditional</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Special Punjabi Lassi</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Thick churned sweet / salted curd with malai peda.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹90</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm" data-name="Special Punjabi Lassi" data-price="90">Add +</button>
+</div>
+</div>
+<div class="dish-card bg-surface-container-lowest p-3 rounded-xl flex flex-col justify-between shadow-sm" data-category="beverages" data-tags="jain">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-bold uppercase">Zesty</span>
+<h4 class="font-title-md text-title-md text-primary mt-0.5 dish-name">Fresh Lime Soda</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-xs mt-0.5">Sweet, salted or mixed with chilled club soda.</p>
+</div>
+<div class="flex items-center justify-between mt-2 pt-1 border-t border-outline-variant/20">
+<span class="font-title-md text-title-md text-primary font-bold">₹80</span>
+<button class="add-dish-btn px-2.5 py-0.5 rounded bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm" data-name="Fresh Lime Soda" data-price="80">Add +</button>
+</div>
+</div>
+</div>
+</section>
+<!-- 9. Desserts & Sweet Endings -->
+<section class="menu-category flex flex-col gap-space-sm scroll-mt-36" id="desserts">
+<div class="flex items-end justify-between border-b border-outline-variant/30 pb-2">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Sweet Finales</span>
+<h2 class="font-headline-sm text-headline-sm text-primary">Desserts &amp; Ice Creams</h2>
+</div>
+<span class="font-label-md text-label-md text-outline">3 Desserts</span>
+</div>
+<!-- Dessert 1 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="desserts" data-tags="chefs-special jain">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">House Speciality</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Gulab Jamun with Rabdi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Piping hot khoya dumplings soaked in rose cardamom sugar syrup, rested on chilled saffron rabdi.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹120</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Gulab Jamun with Rabdi" data-price="120">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Warm dark golden gulab jamun soaked in sugar syrup served over thickened cream rabdi with pistachio slivers in royal bowl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCG-C798a5WFc2Oadx1nftRTfdMGy0OlKSoKiIam_Uo1ks8CCV1VFelYHmsHCBuvu-0HM_Pf1bX1UB8bPon1BTRlNE-Uj1zqdpNCu11e4l3VAYOeR_u3bMs_L4BUdBQKDA6J4QEYAFQaeU7NcIP_Mg53Wq14ZUt3dzo6EGl0T1PXjGez6xW425YZ92E0AjKipbJDiGB4LFT1O63P1ZcS6-qFQH-Hseh-SG83q0qCV4"/>
+</div>
+</article>
+<!-- Dessert 2 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="desserts" data-tags="kids">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Sizzling Finale</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Sizzling Brownie with Ice Cream</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Warm walnut fudge brownie placed on smoking cast iron skillet, topped with rich vanilla scoop &amp; molten chocolate.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹180</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Sizzling Brownie with Ice Cream" data-price="180">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sizzling hot brownie in cast iron sizzler pan crowned with melting vanilla bean ice cream and hot chocolate fudge dripping down" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs94knhqou_9W4JJUnd1ceZd3M18QwSVvDBMxVt4E1_1uUzcjF-Ez1tpMcnnQQFfjxqSdWZUXym7mdPJMaoKNhQjZqm1u1zUMg1fBG5X-hGpDCmH-QEZmlep-zIV-2HFZYW9LFTgLO1wuEF7YCNBrjhda9Tdsbf70-hC7xkXmtVa1fo4iaaAbw_IoPxW4Rbxet4VoANzWUKFV9mKn2RthTJCX7WkQKSVGuALJuXUU"/>
+</div>
+</article>
+<!-- Dessert 3 -->
+<article class="dish-card bg-surface-container-lowest p-space-sm rounded-xl shadow-[0_4px_20px_-2px_rgba(48,32,25,0.06)] flex gap-space-sm transition-all hover:shadow-md" data-category="desserts" data-tags="jain kids">
+<div class="flex-1 flex flex-col justify-between min-w-0">
+<div>
+<div class="flex items-center gap-1.5 mb-1">
+<span class="inline-flex items-center justify-center w-4 h-4 rounded-sm border border-[#2e7d32]/40 bg-surface">
+<span class="w-2 h-2 rounded-full bg-[#2e7d32]"></span>
+</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container font-label-sm text-label-sm text-on-surface-variant">Heritage Matka</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary dish-name">Kesar Pista Kulfi</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-0.5">
+              Traditional slow-reduced full cream milk kulfi infused with Kashmiri saffron strands and crunchy roasted pistachios.
+            </p>
+</div>
+<div class="flex items-center justify-between mt-space-xs pt-1">
+<span class="font-title-md text-title-md text-primary font-bold">₹90</span>
+<button class="add-dish-btn px-3 py-1 rounded bg-secondary-container text-on-secondary-container font-label-md text-label-md hover:bg-secondary hover:text-on-secondary transition-colors" data-name="Kesar Pista Kulfi" data-price="90">
+              Add +
+            </button>
+</div>
+</div>
+<div class="w-24 h-24 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Traditional kesar pista kulfi slices arranged on earthen terracotta saucer sprinkled with saffron threads and pistachio crumble" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCF_GPlGVb3zctLU7mHhqwlaIEDbCh99wK3ZRlbFnMTw0K1nkPZmQHxjN6lExoEXm4sKAR2C2VK5-uKUOVHzmy_6ycsqrZQjSWHFZhMZJNIBmpQB8WSZPB4t0LIxURCLRt6TE-QONTxbdHgB-_Y-l3q4sdZOBeTP2GDzEvUtJG5FTOi16E-kjvFjzjab_eOZEfj01FdzFPvQxNmsyzOOekZ1N-xjBTKDUE2UZJWAsc"/>
+</div>
+</article>
+</section>
+<!-- Empty Search Results State -->
+<div class="hidden flex flex-col items-center justify-center py-space-xl text-center px-4" id="noResultsState">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-3 text-secondary">
+<span class="material-symbols-outlined text-[32px]">menu_book</span>
+</div>
+<h3 class="font-title-lg text-title-lg text-primary font-semibold">No delicacies found</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-1">
+        Try searching with different keywords like "paneer", "biryani", "dal", or clear active filters.
+      </p>
+<button class="mt-4 px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-label-md" id="resetSearchBtn">
+        Reset Search &amp; Filters
+      </button>
+</div>
+<!-- Banquet & Outdoor Dining Highlight Card -->
+<section class="bg-primary-container text-on-primary rounded-2xl p-space-md flex flex-col gap-3 relative overflow-hidden shadow-lg">
+<div class="flex items-center justify-between">
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-container/20 text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">celebration</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Banquets &amp; Party Lawns</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">500+ Capacity</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-surface tracking-tight">Hosting a Celebration in Seoni?</h3>
+<p class="font-body-sm text-body-sm text-inverse-primary/90">
+        Host grand weddings, ring ceremonies, and corporate gatherings with customizable pure vegetarian buffet menus, live counters, and open starlit lawns.
+      </p>
+<div class="flex items-center gap-2 pt-1">
+<a class="flex-1 py-2.5 px-3 rounded-lg bg-secondary-container text-on-secondary-container font-label-md text-label-md text-center font-bold flex items-center justify-center gap-1.5" href="tel:+919522266688">
+<span class="material-symbols-outlined text-[18px]">call</span> Call Banquet Desk
+        </a>
+<a class="py-2.5 px-3.5 rounded-lg bg-surface-container/20 text-on-primary font-label-md text-label-md flex items-center justify-center" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden,%20I%20am%20inquiring%20about%20event%20catering%20and%20lawn%20booking">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</a>
+</div>
+</section>
+<!-- Bottom Spacing for Floating Table Bar -->
+<div class="h-28"></div>
+</div>
+<!-- FLOATING PRE-ORDER & TABLE RESERVATION BAR -->
+<aside class="fixed bottom-20 left-0 right-0 z-40 px-margin-mobile pointer-events-none">
+<div class="pointer-events-auto max-w-lg mx-auto bg-primary text-on-primary rounded-2xl p-3 shadow-[0_16px_36px_rgba(24,11,6,0.35)] flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]" id="orderBagIcon">table_restaurant</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-md text-label-md text-secondary-container font-bold uppercase tracking-wider" id="orderStatusText">Table Dining</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span class="font-label-sm text-label-sm text-outline-variant" id="itemCountDisplay">0 items selected</span>
+</div>
+<p class="font-body-sm text-body-sm text-inverse-primary truncate">Reserve lawn cabana or pre-order</p>
+</div>
+</div>
+<div class="flex items-center gap-1.5 flex-shrink-0">
+<a class="h-10 px-3.5 rounded-xl bg-secondary-container text-on-secondary-container font-label-md text-label-md font-bold flex items-center justify-center transition-all hover:bg-secondary hover:text-on-secondary active:scale-95 shadow-sm" href="tel:+919522266688">
+          Reserve
+        </a>
+</div>
+</div>
+</aside>
+</div>
+<!-- Micro-Interactions Script for Dynamic Menu Navigation, Search & Filters -->
+<script>
+  (function() {
+    const searchInput = document.getElementById('menuSearchInput');
+    const clearSearchBtn = document.getElementById('clearSearchBtn');
+    const resetSearchBtn = document.getElementById('resetSearchBtn');
+    const filterButtons = document.querySelectorAll('.dietary-filter');
+    const dishCards = document.querySelectorAll('.dish-card');
+    const categorySections = document.querySelectorAll('.menu-category');
+    const noResultsState = document.getElementById('noResultsState');
+    const catNavLinks = document.querySelectorAll('.cat-nav-link');
+    const itemCountDisplay = document.getElementById('itemCountDisplay');
+    const addBtns = document.querySelectorAll('.add-dish-btn');
+    
+    let activeFilter = 'all';
+    let searchQuery = '';
+    let selectedCount = 0;
+
+    function filterDishes() {
+      let visibleCount = 0;
+
+      dishCards.forEach(card => {
+        const dishName = (card.querySelector('.dish-name')?.textContent || '').toLowerCase();
+        const dishDesc = (card.querySelector('p')?.textContent || '').toLowerCase();
+        const tags = (card.dataset.tags || '').toLowerCase();
+        
+        const matchesSearch = !searchQuery || dishName.includes(searchQuery) || dishDesc.includes(searchQuery);
+        let matchesFilter = true;
+
+        if (activeFilter !== 'all') {
+          matchesFilter = tags.includes(activeFilter);
+        }
+
+        if (matchesSearch && matchesFilter) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Hide or show sections that have no visible cards
+      categorySections.forEach(sec => {
+        const remaining = sec.querySelectorAll('.dish-card:not(.hidden)');
+        if (remaining.length === 0) {
+          sec.classList.add('hidden');
+        } else {
+          sec.classList.remove('hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResultsState.classList.remove('hidden');
+      } else {
+        noResultsState.classList.add('hidden');
+      }
+    }
+
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value.trim().toLowerCase();
+      clearSearchBtn.classList.toggle('hidden', searchQuery.length === 0);
+      filterDishes();
+    });
+
+    clearSearchBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      clearSearchBtn.classList.add('hidden');
+      filterDishes();
+      searchInput.focus();
+    });
+
+    if (resetSearchBtn) {
+      resetSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearSearchBtn.classList.add('hidden');
+        activeFilter = 'all';
+        filterButtons.forEach(btn => {
+          btn.classList.toggle('bg-primary', btn.dataset.filter === 'all');
+          btn.classList.toggle('text-on-primary', btn.dataset.filter === 'all');
+          btn.classList.toggle('bg-surface-container', btn.dataset.filter !== 'all');
+          btn.classList.toggle('text-on-surface-variant', btn.dataset.filter !== 'all');
+        });
+        filterDishes();
+      });
+    }
+
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('bg-primary', 'text-on-primary');
+          b.classList.add('bg-surface-container', 'text-on-surface-variant');
+        });
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+        btn.classList.add('bg-primary', 'text-on-primary');
+        activeFilter = btn.dataset.filter;
+        filterDishes();
+      });
+    });
+
+    // Add to Table / Order count interaction
+    addBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        selectedCount++;
+        itemCountDisplay.textContent = `${selectedCount} item${selectedCount > 1 ? 's' : ''} added`;
+        
+        // Gentle tactile feedback
+        btn.textContent = '✓ Added';
+        btn.classList.add('bg-secondary', 'text-on-secondary');
+        setTimeout(() => {
+          btn.textContent = 'Add +';
+          btn.classList.remove('bg-secondary', 'text-on-secondary');
+        }, 1200);
+      });
+    });
+
+    // Smooth scroll and active styling for category tabs
+    catNavLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        catNavLinks.forEach(l => {
+          l.classList.remove('bg-secondary-container', 'text-on-secondary-container');
+          l.classList.add('text-on-surface-variant');
+        });
+        link.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        link.classList.remove('text-on-surface-variant');
+      });
+    });
+  })();
+</script></main><a aria-label="WhatsApp Enquiry" class="fixed bottom-24 right-4 z-40 w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container shadow-[0_8px_20px_rgba(48,32,25,0.18)] flex items-center justify-center transition-transform active:scale-95" href="https://wa.me/919522266688?text=Hello%20Abhinandan%20Garden%20Restaurant,%20I%20would%20like%20to%20make%20an%20enquiry"><span class="material-symbols-outlined text-[24px]">chat</span></a><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(48,32,25,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-1"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">yard</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#"><span class="material-symbols-outlined text-[22px]">restaurant_menu</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Menu</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="celebrations-and-events" href="#"><span class="material-symbols-outlined text-[22px]">celebration</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Events</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="photo-gallery" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Gallery</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] py-1 text-on-surface-variant hover:text-on-surface transition-colors" data-path="book-table" href="#"><span class="material-symbols-outlined text-[22px]">event_seat</span><span class="font-label-sm text-label-sm tracking-tight mt-0.5">Book Table</span></a></div></nav></body></html>
